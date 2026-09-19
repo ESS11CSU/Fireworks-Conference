@@ -12,14 +12,14 @@ const c = t(lang);
 
 <div
   id="splash"
-  class="fixed inset-0 z-[80] flex flex-col items-center justify-end overflow-hidden bg-[#070414] text-white"
+  class="fixed inset-0 z-[80] flex h-[100dvh] w-screen flex-col items-center justify-center overflow-hidden bg-[#070414] text-white"
 >
   <canvas id="fireworks" class="absolute inset-0 h-full w-full"></canvas>
   <div
-    class="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_50%_80%,rgba(255,77,141,0.18),transparent_45%),radial-gradient(circle_at_20%_20%,rgba(92,225,255,0.16),transparent_35%)]"
+    class="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(255,77,141,0.18),transparent_45%),radial-gradient(circle_at_20%_20%,rgba(92,225,255,0.16),transparent_35%)]"
   >
   </div>
-  <div class="relative z-10 mb-16 w-full max-w-xl px-6 text-center">
+  <div class="relative z-10 w-full max-w-xl px-6 text-center">
     <p class="text-[11px] font-semibold uppercase tracking-[0.35em] text-cyan-200">
       {c.splashKicker}
     </p>
@@ -53,8 +53,10 @@ const c = t(lang);
   const skip = document.getElementById("skip-splash");
   const seenKey = "firework-ess-splash-seen";
 
+  let hidden = false;
   const hide = () => {
-    if (!splash) return;
+    if (!splash || hidden) return;
+    hidden = true;
     splash.style.transition = "opacity 500ms ease";
     splash.style.opacity = "0";
     window.setTimeout(() => splash.remove(), 520);
@@ -75,6 +77,10 @@ const c = t(lang);
 
   enter?.addEventListener("click", hide);
   skip?.addEventListener("click", hide);
+
+  if (splash && document.body.contains(splash)) {
+    window.setTimeout(hide, 2300);
+  }
 
   if (canvas && splash && document.body.contains(splash)) {
     const ctx = canvas.getContext("2d");

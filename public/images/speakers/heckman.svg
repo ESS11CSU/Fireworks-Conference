@@ -1,0 +1,19 @@
+<!--
+  TODO: Replace this placeholder with a rights-safe official headshot of James Heckman
+  when a reusable license is confirmed.
+  Candidate sources (do not use until rights are confirmed):
+  - University of Chicago / CEHD faculty page: https://cehd.uchicago.edu/
+  - Wikimedia Commons File:James Heckman.jpg (license currently disputed vs Flickr ARR)
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-label="Placeholder portrait for James Heckman">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2a0a3d"/>
+      <stop offset="100%" stop-color="#12324a"/>
+    </linearGradient>
+  </defs>
+  <rect width="320" height="320" rx="36" fill="url(#bg)"/>
+  <circle cx="160" cy="128" r="52" fill="#ffd166" fill-opacity=".18" stroke="#ffd166" stroke-width="2"/>
+  <text x="160" y="142" text-anchor="middle" font-family="Georgia, serif" font-size="42" fill="#ffd166">JH</text>
+  <text x="160" y="230" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" fill="#f6f1ff" fill-opacity=".72">James Heckman</text>
+</svg>

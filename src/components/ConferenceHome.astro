@@ -29,9 +29,11 @@ const accents = ["from-fuchsia-500", "from-cyan-400", "from-amber-300", "from-li
       >
         {c.heroTitle}
       </h1>
-      <p class="mt-6 max-w-2xl text-base leading-relaxed text-white/75 sm:text-lg">
-        {c.heroLead}
-      </p>
+      <div class="mt-6 max-w-2xl space-y-2 text-base leading-relaxed text-white/75 sm:text-lg">
+        <p>{c.heroLeadTitle}</p>
+        <p>{c.heroLeadOrganizers}</p>
+        <p>{c.heroLeadHost}</p>
+      </div>
       <div class="mt-8 flex flex-wrap gap-3">
         <a
           href="#submit"
@@ -65,8 +67,23 @@ const accents = ["from-fuchsia-500", "from-cyan-400", "from-amber-300", "from-li
       <h2 class="mt-3 max-w-3xl font-display text-3xl text-white sm:text-4xl">
         {c.aboutTitle}
       </h2>
-      <p class="mt-5 max-w-3xl text-white/70">{c.aboutBody}</p>
-      <p class="mt-4 max-w-3xl text-white/70">{c.aboutBody2}</p>
+      <div class="mt-8 grid items-center gap-8 lg:grid-cols-2 lg:gap-12">
+        <div>
+          <p class="text-white/70">{c.aboutBody}</p>
+          <p class="mt-4 text-white/70">{c.aboutBody2}</p>
+        </div>
+        <figure class="overflow-hidden rounded-3xl border border-white/10">
+          <!-- Decorative academic stock photo only; no conference-specific claims. -->
+          <img
+            src="/images/about-academic.jpg"
+            alt={c.aboutImageAlt}
+            class="h-full max-h-[28rem] w-full object-cover"
+            width="1600"
+            height="1067"
+          />
+          <figcaption class="px-4 py-2 text-xs text-white/40">{c.aboutImageCredit}</figcaption>
+        </figure>
+      </div>
       <dl class="mt-8 grid gap-4 sm:grid-cols-2">
         <div class="rounded-3xl border border-white/10 bg-white/5 p-6">
           <dt class="text-xs uppercase tracking-[0.2em] text-white/45">{c.organizersLabel}</dt>
@@ -86,6 +103,8 @@ const accents = ["from-fuchsia-500", "from-cyan-400", "from-amber-300", "from-li
               <a
                 class="mt-4 inline-block text-sm text-cyan-200 underline-offset-4 hover:underline"
                 href={org.href}
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 {org.href.replace("https://", "")}
               </a>
@@ -139,11 +158,23 @@ const accents = ["from-fuchsia-500", "from-cyan-400", "from-amber-300", "from-li
         {
           c.speakers.map((speaker) => (
             <article class="rounded-3xl border border-white/10 p-6">
-              <p class="text-xs font-semibold uppercase tracking-[0.2em] text-fuchsia-200">
-                {speaker.badge}
-              </p>
-              <h3 class="mt-2 font-display text-2xl text-white">{speaker.name}</h3>
-              <p class="mt-1 text-sm text-cyan-200">{speaker.role}</p>
+              <div class="flex gap-4">
+                {/* TODO: Neutral placeholder until a rights-safe official headshot is confirmed. */}
+                <img
+                  src={speaker.photo}
+                  alt={speaker.name}
+                  class="h-24 w-24 shrink-0 rounded-2xl object-cover ring-1 ring-white/10"
+                  width="96"
+                  height="96"
+                />
+                <div>
+                  <p class="text-xs font-semibold uppercase tracking-[0.2em] text-fuchsia-200">
+                    {speaker.badge}
+                  </p>
+                  <h3 class="mt-2 font-display text-2xl text-white">{speaker.name}</h3>
+                  <p class="mt-1 text-sm text-cyan-200">{speaker.role}</p>
+                </div>
+              </div>
               <p class="mt-4 text-sm leading-relaxed text-white/70">{speaker.bio}</p>
             </article>
           ))
@@ -172,7 +203,7 @@ const accents = ["from-fuchsia-500", "from-cyan-400", "from-amber-300", "from-li
       <h3 class="mt-12 text-sm font-semibold uppercase tracking-[0.2em] text-amber-200">
         {c.committeeLabel}
       </h3>
-      <div class="mt-4 grid gap-5 sm:grid-cols-2">
+      <div class="mt-4 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
         {
           c.committee.map((person) => (
             <article class="rounded-3xl border border-white/10 p-6">
@@ -269,7 +300,12 @@ const accents = ["from-fuchsia-500", "from-cyan-400", "from-amber-300", "from-li
   <footer class="border-t border-white/10 px-5 py-10 text-center text-sm text-white/50">
     <p>{c.footerCredit}</p>
     <p class="mt-3">
-      <a class="text-cyan-200 underline-offset-4 hover:underline" href={c.essHref}>
+      <a
+        class="text-cyan-200 underline-offset-4 hover:underline"
+        href={c.essHref}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         {c.essLinkLabel}
       </a>
     </p>

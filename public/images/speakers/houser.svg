@@ -1,0 +1,18 @@
+<!--
+  TODO: Replace this placeholder with a rights-safe official headshot of Daniel Houser
+  when a reusable license is confirmed.
+  Candidate source (do not use until rights are confirmed):
+  - George Mason University faculty page: https://economics.gmu.edu/people/dhouser
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-label="Placeholder portrait for Daniel Houser">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2a0a3d"/>
+      <stop offset="100%" stop-color="#12324a"/>
+    </linearGradient>
+  </defs>
+  <rect width="320" height="320" rx="36" fill="url(#bg)"/>
+  <circle cx="160" cy="128" r="52" fill="#5ce1ff" fill-opacity=".18" stroke="#5ce1ff" stroke-width="2"/>
+  <text x="160" y="142" text-anchor="middle" font-family="Georgia, serif" font-size="42" fill="#5ce1ff">DH</text>
+  <text x="160" y="230" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" fill="#f6f1ff" fill-opacity=".72">Daniel Houser</text>
+</svg>
