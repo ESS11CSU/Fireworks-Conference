@@ -73,19 +73,19 @@ body {
 }
 
 .speaker-photo-frame {
-  aspect-ratio: 3 / 4;
-  width: 9rem;
-  height: 12rem;
+  aspect-ratio: 2 / 3;
+  width: 10rem;
+  height: 15rem;
   flex-shrink: 0;
   align-self: flex-start;
   overflow: hidden;
-  border-radius: 1rem;
+  border-radius: 0.625rem;
 }
 
 @media (min-width: 640px) {
   .speaker-photo-frame {
-    width: 11rem;
-    height: 14.6667rem;
+    width: 12.5rem;
+    height: 18.75rem;
   }
 }
 
