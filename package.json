@@ -1,0 +1,17 @@
+{
+  "name": "firework-ess-asia-meeting",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Firework Conference — ESS Asia Meeting. Phase-1 local preview site (Astro + Tailwind), bilingual EN/中文.",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "astro": "^5.13.7",
+    "@tailwindcss/vite": "^4.1.13",
+    "tailwindcss": "^4.1.13"
+  }
+}

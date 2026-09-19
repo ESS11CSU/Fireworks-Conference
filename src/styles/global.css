@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Fraunces", "Songti SC", "STSong", serif;
+  --font-sans: "Sora", "Noto Sans SC", "PingFang SC", "Hiragino Sans GB",
+    "Microsoft YaHei", sans-serif;
+  --color-night: #070414;
+  --color-plum: #2a0a3d;
+  --color-spark: #ff4d8d;
+  --color-gold: #ffd166;
+  --color-cyan: #5ce1ff;
+  --color-lime: #b8ff6a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--color-night);
+  color: #f6f1ff;
+}
+
+::selection {
+  background: #ff4d8d;
+  color: #fff;
+}
