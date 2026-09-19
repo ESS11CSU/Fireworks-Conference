@@ -20,7 +20,7 @@ Then open the URL Astro prints. Because `base` is `/firework-ess-asia-meeting/`,
 
 The first visit in a browser session opens a colorful fireworks splash, centered in the viewport. It dismisses automatically after about 2.3 seconds, or immediately via **Enter the meeting** / **进入会议** or **Skip**. Later views in the same session skip the splash (`sessionStorage`).
 
-Use the header **Light / Dark** (亮色 / 暗色) control to switch themes. The choice is stored in `localStorage` (`firework-ess-theme`). If you have not chosen yet, the site follows `prefers-color-scheme`.
+Use the header **Light / Dark** (亮色 / 暗色) control to switch themes. The choice is stored in `localStorage` (`firework-ess-theme`). First-time visitors get **light** (浅色) unless they have already saved a preference.
 
 ## Build (optional)
 
