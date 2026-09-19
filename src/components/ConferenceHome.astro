@@ -82,7 +82,7 @@ const kickerClass = isZh ? "font-sans font-bold" : "font-semibold";
         <figure class="card-hover overflow-hidden rounded-3xl">
           <!-- Decorative academic stock photo only; no conference-specific claims. -->
           <img
-            src="/images/about-academic.jpg"
+            src={`${import.meta.env.BASE_URL}images/about-academic.jpg`}
             alt={c.aboutImageAlt}
             class="h-full max-h-[28rem] w-full object-cover"
             width="1600"
