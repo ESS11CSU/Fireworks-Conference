@@ -34,7 +34,7 @@ const accents = ["from-fuchsia-500", "from-cyan-400", "from-amber-300", "from-li
       </p>
       <div class="mt-8 flex flex-wrap gap-3">
         <a
-          href="#agenda"
+          href="#submit"
           class="rounded-full bg-gradient-to-r from-fuchsia-500 to-amber-400 px-6 py-3 text-sm font-semibold text-night"
         >
           {c.heroPrimary}
@@ -48,10 +48,10 @@ const accents = ["from-fuchsia-500", "from-cyan-400", "from-amber-300", "from-li
       </div>
       <dl class="mt-14 grid max-w-xl grid-cols-3 gap-6">
         {
-          c.stats.map((stat) => (
+          c.facts.map((fact) => (
             <div>
-              <dt class="text-xs uppercase tracking-[0.2em] text-white/45">{stat.label}</dt>
-              <dd class="mt-1 font-display text-3xl text-amber-200">{stat.value}</dd>
+              <dt class="text-xs uppercase tracking-[0.2em] text-white/45">{fact.label}</dt>
+              <dd class="mt-1 font-display text-xl text-amber-200 sm:text-2xl">{fact.value}</dd>
             </div>
           ))
         }
@@ -66,9 +66,44 @@ const accents = ["from-fuchsia-500", "from-cyan-400", "from-amber-300", "from-li
         {c.aboutTitle}
       </h2>
       <p class="mt-5 max-w-3xl text-white/70">{c.aboutBody}</p>
-      <div class="mt-10 grid gap-5 md:grid-cols-3">
+      <p class="mt-4 max-w-3xl text-white/70">{c.aboutBody2}</p>
+      <dl class="mt-8 grid gap-4 sm:grid-cols-2">
+        <div class="rounded-3xl border border-white/10 bg-white/5 p-6">
+          <dt class="text-xs uppercase tracking-[0.2em] text-white/45">{c.organizersLabel}</dt>
+          <dd class="mt-2 text-white">{c.organizersValue}</dd>
+        </div>
+        <div class="rounded-3xl border border-white/10 bg-white/5 p-6">
+          <dt class="text-xs uppercase tracking-[0.2em] text-white/45">{c.hostLabel}</dt>
+          <dd class="mt-2 text-white">{c.hostValue}</dd>
+        </div>
+      </dl>
+      <div class="mt-10 grid gap-5 lg:grid-cols-3">
         {
-          c.pillars.map((pillar, index) => (
+          c.orgs.map((org) => (
+            <article class="rounded-3xl border border-white/10 bg-white/5 p-6">
+              <h3 class="font-display text-xl text-white">{org.title}</h3>
+              <p class="mt-3 text-sm leading-relaxed text-white/65">{org.body}</p>
+              <a
+                class="mt-4 inline-block text-sm text-cyan-200 underline-offset-4 hover:underline"
+                href={org.href}
+              >
+                {org.href.replace("https://", "")}
+              </a>
+            </article>
+          ))
+        }
+      </div>
+    </section>
+
+    <section id="topics" class="mx-auto max-w-6xl px-5 py-20">
+      <p class="text-xs font-semibold uppercase tracking-[0.32em] text-lime-200">
+        {c.topicsKicker}
+      </p>
+      <h2 class="mt-3 font-display text-3xl text-white sm:text-4xl">{c.topicsTitle}</h2>
+      <p class="mt-5 max-w-3xl text-white/70">{c.topicsNote}</p>
+      <div class="mt-10 grid gap-5 sm:grid-cols-2">
+        {
+          c.topics.map((topic, index) => (
             <article class="rounded-3xl border border-white/10 bg-white/5 p-6">
               <div
                 class:list={[
@@ -76,37 +111,22 @@ const accents = ["from-fuchsia-500", "from-cyan-400", "from-amber-300", "from-li
                   accents[index] ?? "from-white",
                 ]}
               />
-              <h3 class="font-display text-xl text-white">{pillar.title}</h3>
-              <p class="mt-3 text-sm leading-relaxed text-white/65">{pillar.body}</p>
+              <h3 class="font-display text-xl text-white">{topic}</h3>
             </article>
           ))
         }
       </div>
     </section>
 
-    <section id="agenda" class="mx-auto max-w-6xl px-5 py-20">
+    <section id="program" class="mx-auto max-w-6xl px-5 py-20">
       <p class="text-xs font-semibold uppercase tracking-[0.32em] text-amber-200">
-        {c.agendaKicker}
+        {c.programKicker}
       </p>
-      <h2 class="mt-3 font-display text-3xl text-white sm:text-4xl">{c.agendaTitle}</h2>
-      <p class="mt-3 text-sm text-white/55">{c.agendaNote}</p>
-      <div class="mt-10 grid gap-5 lg:grid-cols-3">
-        {
-          c.days.map((day) => (
-            <article class="rounded-3xl bg-gradient-to-b from-fuchsia-500/15 to-white/5 p-6 ring-1 ring-white/10">
-              <p class="text-xs uppercase tracking-[0.22em] text-cyan-200">{day.date}</p>
-              <h3 class="mt-2 font-display text-2xl text-amber-100">{day.title}</h3>
-              <ul class="mt-6 space-y-4">
-                {day.items.map((item) => (
-                  <li class="flex gap-4 text-sm">
-                    <span class="w-14 shrink-0 font-semibold text-fuchsia-200">{item.time}</span>
-                    <span class="text-white/80">{item.title}</span>
-                  </li>
-                ))}
-              </ul>
-            </article>
-          ))
-        }
+      <h2 class="mt-3 font-display text-3xl text-white sm:text-4xl">{c.programTitle}</h2>
+      <div class="mt-10 rounded-3xl bg-gradient-to-b from-fuchsia-500/15 to-white/5 p-8 ring-1 ring-white/10 sm:p-12">
+        <p class="text-xs uppercase tracking-[0.22em] text-cyan-200">{c.programDates}</p>
+        <p class="mt-3 font-display text-3xl text-amber-100">{c.programNote}</p>
+        <p class="mt-4 max-w-2xl text-white/70">{c.programDetail}</p>
       </div>
     </section>
 
@@ -115,17 +135,98 @@ const accents = ["from-fuchsia-500", "from-cyan-400", "from-amber-300", "from-li
         {c.speakersKicker}
       </p>
       <h2 class="mt-3 font-display text-3xl text-white sm:text-4xl">{c.speakersTitle}</h2>
-      <div class="mt-10 grid gap-5 sm:grid-cols-2">
+      <div class="mt-10 grid gap-5 lg:grid-cols-2">
         {
           c.speakers.map((speaker) => (
             <article class="rounded-3xl border border-white/10 p-6">
-              <h3 class="font-display text-2xl text-white">{speaker.name}</h3>
+              <p class="text-xs font-semibold uppercase tracking-[0.2em] text-fuchsia-200">
+                {speaker.badge}
+              </p>
+              <h3 class="mt-2 font-display text-2xl text-white">{speaker.name}</h3>
               <p class="mt-1 text-sm text-cyan-200">{speaker.role}</p>
-              <p class="mt-4 text-white/70">“{speaker.talk}”</p>
+              <p class="mt-4 text-sm leading-relaxed text-white/70">{speaker.bio}</p>
             </article>
           ))
         }
       </div>
+    </section>
+
+    <section id="leadership" class="mx-auto max-w-6xl px-5 py-20">
+      <p class="text-xs font-semibold uppercase tracking-[0.32em] text-cyan-200">
+        {c.leadershipKicker}
+      </p>
+      <h2 class="mt-3 font-display text-3xl text-white sm:text-4xl">{c.leadershipTitle}</h2>
+      <h3 class="mt-10 text-sm font-semibold uppercase tracking-[0.2em] text-amber-200">
+        {c.chairsLabel}
+      </h3>
+      <div class="mt-4 grid gap-5 md:grid-cols-3">
+        {
+          c.chairs.map((person) => (
+            <article class="rounded-3xl border border-white/10 bg-white/5 p-6">
+              <h4 class="font-display text-xl text-white">{person.name}</h4>
+              <p class="mt-2 text-sm text-white/65">{person.role}</p>
+            </article>
+          ))
+        }
+      </div>
+      <h3 class="mt-12 text-sm font-semibold uppercase tracking-[0.2em] text-amber-200">
+        {c.committeeLabel}
+      </h3>
+      <div class="mt-4 grid gap-5 sm:grid-cols-2">
+        {
+          c.committee.map((person) => (
+            <article class="rounded-3xl border border-white/10 p-6">
+              <h4 class="font-display text-xl text-white">{person.name}</h4>
+              <p class="mt-2 text-sm text-white/65">{person.role}</p>
+            </article>
+          ))
+        }
+      </div>
+    </section>
+
+    <section id="submit" class="mx-auto max-w-6xl px-5 py-20">
+      <p class="text-xs font-semibold uppercase tracking-[0.32em] text-fuchsia-300">
+        {c.submitKicker}
+      </p>
+      <h2 class="mt-3 font-display text-3xl text-white sm:text-4xl">{c.submitTitle}</h2>
+      <p class="mt-5 max-w-3xl text-white/70">{c.submitInvite}</p>
+      <ul class="mt-4 list-disc space-y-1 pl-5 text-white/80">
+        {c.submitMaterials.map((item) => <li>{item}</li>)}
+      </ul>
+      <p class="mt-6 max-w-3xl text-white/70">{c.submitHow}</p>
+      <p class="mt-3 font-mono text-sm text-amber-200">{c.submitSubject}</p>
+      <p class="mt-6 text-xs uppercase tracking-[0.2em] text-white/45">{c.submitEmailLabel}</p>
+      <a class="text-lg text-cyan-200 underline-offset-4 hover:underline" href={`mailto:${c.submitEmail}`}>
+        {c.submitEmail}
+      </a>
+      <p class="mt-6 max-w-3xl text-white/70">{c.reviewNote}</p>
+      <dl class="mt-8 grid gap-5 sm:grid-cols-2">
+        <div class="rounded-3xl border border-white/10 bg-white/5 p-6">
+          <dt class="text-xs uppercase tracking-[0.2em] text-white/45">{c.deadlineLabel}</dt>
+          <dd class="mt-2 text-white">{c.deadlineValue}</dd>
+        </div>
+        <div class="rounded-3xl border border-white/10 bg-white/5 p-6">
+          <dt class="text-xs uppercase tracking-[0.2em] text-white/45">{c.acceptanceLabel}</dt>
+          <dd class="mt-2 text-white">{c.acceptanceValue}</dd>
+        </div>
+      </dl>
+      <h3 class="mt-10 text-sm font-semibold uppercase tracking-[0.2em] text-amber-200">
+        {c.feesLabel}
+      </h3>
+      <div class="mt-4 grid gap-5 sm:grid-cols-2">
+        {
+          c.fees.map((fee) => (
+            <article class="rounded-3xl bg-gradient-to-b from-fuchsia-500/15 to-white/5 p-6 ring-1 ring-white/10">
+              <p class="text-sm text-white/65">{fee.label}</p>
+              <p class="mt-2 font-display text-3xl text-amber-100">{fee.value}</p>
+            </article>
+          ))
+        }
+      </div>
+      <h3 class="mt-10 text-sm font-semibold uppercase tracking-[0.2em] text-amber-200">
+        {c.mealsLabel}
+      </h3>
+      <p class="mt-3 max-w-3xl text-white/70">{c.mealsValue}</p>
     </section>
 
     <section id="venue" class="mx-auto max-w-6xl px-5 py-20">
@@ -145,12 +246,33 @@ const accents = ["from-fuchsia-500", "from-cyan-400", "from-amber-300", "from-li
             ))
           }
         </dl>
+        <h3 class="mt-10 text-sm font-semibold uppercase tracking-[0.2em] text-amber-200">
+          {c.contactTitle}
+        </h3>
+        <div class="mt-4 grid gap-5 sm:grid-cols-2">
+          {
+            c.contacts.map((person) => (
+              <div>
+                <p class="text-white">{person.name}</p>
+                <p class="mt-1 text-sm text-white/65">{person.role}</p>
+                <a class="mt-1 inline-block text-cyan-200" href={`tel:${person.phone}`}>
+                  {person.phone}
+                </a>
+              </div>
+            ))
+          }
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="border-t border-white/10 px-5 py-10 text-center text-sm text-white/50">
     <p>{c.footerCredit}</p>
+    <p class="mt-3">
+      <a class="text-cyan-200 underline-offset-4 hover:underline" href={c.essHref}>
+        {c.essLinkLabel}
+      </a>
+    </p>
     <p class="mt-2">{c.footerNote}</p>
   </footer>
 </div>

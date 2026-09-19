@@ -1,6 +1,6 @@
-# Firework Conference — ESS Asia Meeting
+# Firework Conference: Economic Science Society 1st Asia Meeting
 
-Phase-1 conference website for the Firework Conference / ESS Asia Meeting.
+Phase-1 conference website for the Firework Conference: Economic Science Society 1st Asia Meeting (theme: Causal Inference in the Age of AI).
 
 **Stack:** Astro + Tailwind CSS  
 **Languages:** English and 中文  
