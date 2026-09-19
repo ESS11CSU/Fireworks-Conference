@@ -14,7 +14,7 @@ const htmlLang = lang === "zh" ? "zh-Hans" : "en";
 ---
 
 <!doctype html>
-<html lang={htmlLang}>
+<html lang={htmlLang} data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -28,6 +28,23 @@ const htmlLang = lang === "zh" ? "zh-Hans" : "en";
       rel="stylesheet"
     />
     <title>{c.metaTitle}</title>
+    <script is:inline>
+      (function () {
+        try {
+          var key = "firework-ess-theme";
+          var saved = localStorage.getItem(key);
+          var theme =
+            saved === "light" || saved === "dark"
+              ? saved
+              : window.matchMedia("(prefers-color-scheme: light)").matches
+                ? "light"
+                : "dark";
+          document.documentElement.setAttribute("data-theme", theme);
+        } catch (e) {
+          document.documentElement.setAttribute("data-theme", "dark");
+        }
+      })();
+    </script>
   </head>
   <body class="min-h-screen antialiased">
     <Splash lang={lang} />

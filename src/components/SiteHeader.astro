@@ -1,6 +1,7 @@
 ---
 import type { Lang } from "../i18n/copy";
 import { t } from "../i18n/copy";
+import ThemeToggle from "./ThemeToggle.astro";
 
 interface Props {
   lang: Lang;
@@ -11,35 +12,40 @@ const c = t(lang);
 ---
 
 <header
-  class="sticky top-0 z-40 border-b border-white/10 bg-[#070414]/75 backdrop-blur-xl"
+  class="sticky top-0 z-40 border-b backdrop-blur-xl"
+  style="border-color: var(--line); background: var(--header);"
 >
   <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-4">
     <a href="#top" class="flex items-baseline gap-2 no-underline">
-      <span class="font-display text-xl text-amber-200">{c.brand}</span>
-      <span class="text-[11px] uppercase tracking-[0.22em] text-white/55">
+      <span class="font-display text-xl" style="color: var(--accent-gold);">{c.brand}</span>
+      <span class="text-[11px] uppercase tracking-[0.22em]" style="color: var(--faint);">
         {c.brandSuffix}
       </span>
     </a>
-    <nav class="hidden items-center gap-3 text-sm text-white/80 lg:flex xl:gap-5">
+    <nav class="hidden items-center gap-3 text-sm lg:flex xl:gap-5" style="color: var(--muted);">
       {
         c.nav.map((item) => (
-          <a class="transition hover:text-amber-200" href={item.href}>
+          <a class="transition hover:opacity-80" href={item.href} style="color: inherit;">
             {item.label}
           </a>
         ))
       }
     </nav>
-    <a
-      href={c.otherHref}
-      class="rounded-full border border-white/20 px-3 py-1 text-xs font-semibold tracking-wide text-white/80 hover:border-amber-200 hover:text-amber-200"
-    >
-      {c.otherLang}
-    </a>
+    <div class="flex items-center gap-2">
+      <ThemeToggle lang={lang} />
+      <a
+        href={c.otherHref}
+        class="rounded-full border px-3 py-1 text-xs font-semibold tracking-wide"
+        style="border-color: var(--line-strong); color: var(--ink);"
+      >
+        {c.otherLang}
+      </a>
+    </div>
   </div>
-  <nav class="flex gap-4 overflow-x-auto px-5 pb-3 text-xs text-white/70 lg:hidden">
+  <nav class="flex gap-4 overflow-x-auto px-5 pb-3 text-xs lg:hidden" style="color: var(--muted);">
     {
       c.nav.map((item) => (
-        <a class="shrink-0 hover:text-amber-200" href={item.href}>
+        <a class="shrink-0" href={item.href} style="color: inherit;">
           {item.label}
         </a>
       ))

@@ -1,0 +1,57 @@
+---
+import type { Lang } from "../i18n/copy";
+import { t } from "../i18n/copy";
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const c = t(lang);
+---
+
+<button
+  id="theme-toggle"
+  type="button"
+  class="inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-xs font-semibold tracking-wide"
+  style="border-color: var(--line-strong); color: var(--ink);"
+  aria-label={c.themeToLight}
+  data-label-light={c.themeToLight}
+  data-label-dark={c.themeToDark}
+>
+  <span id="theme-toggle-icon" aria-hidden="true">☀</span>
+  <span id="theme-toggle-text">{c.themeToLight}</span>
+</button>
+
+<script>
+  const storageKey = "firework-ess-theme";
+
+  const applyTheme = (theme: "light" | "dark") => {
+    document.documentElement.dataset.theme = theme;
+    const toggle = document.getElementById("theme-toggle");
+    const icon = document.getElementById("theme-toggle-icon");
+    const text = document.getElementById("theme-toggle-text");
+    if (!toggle || !icon || !text) return;
+    const next = theme === "dark" ? "light" : "dark";
+    const label =
+      next === "light" ? toggle.dataset.labelLight || "Light" : toggle.dataset.labelDark || "Dark";
+    toggle.setAttribute("aria-label", label);
+    text.textContent = label;
+    icon.textContent = next === "light" ? "☀" : "☾";
+  };
+
+  const current = (): "light" | "dark" =>
+    document.documentElement.dataset.theme === "light" ? "light" : "dark";
+
+  applyTheme(current());
+
+  document.getElementById("theme-toggle")?.addEventListener("click", () => {
+    const next = current() === "dark" ? "light" : "dark";
+    try {
+      localStorage.setItem(storageKey, next);
+    } catch {
+      /* private mode */
+    }
+    applyTheme(next);
+  });
+</script>
