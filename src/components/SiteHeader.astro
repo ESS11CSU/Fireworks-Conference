@@ -17,7 +17,7 @@ const c = t(lang);
 >
   <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-4">
     <a href="#top" class="flex items-baseline gap-2 no-underline">
-      <span class="font-display text-xl" style="color: var(--accent-gold);">{c.brand}</span>
+      <span class:list={["text-xl", lang === "zh" ? "font-sans font-bold" : "font-display"]} style="color: var(--accent-gold);">{c.brand}</span>
       <span class="text-[11px] uppercase tracking-[0.22em]" style="color: var(--faint);">
         {c.brandSuffix}
       </span>

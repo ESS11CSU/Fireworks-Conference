@@ -35,7 +35,7 @@ export const copy = {
     heroPrimary: "Submit a paper",
     heroSecondary: "Speakers",
     facts: [
-      { label: "Dates", value: "11–13 Nov 2026" },
+      { label: "Dates", value: "11\u201113 Nov 2026" },
       { label: "Venue", value: "Changsha, China" },
       { label: "Deadline", value: "23 Oct 2026 AoE" },
     ],
@@ -235,7 +235,7 @@ export const copy = {
       { href: "#submit", label: "投稿" },
       { href: "#venue", label: "会场" },
     ],
-    heroEyebrow: "2026年11月11–13日 · 中国长沙",
+    heroEyebrow: "2026年11月11\u201113日 · 中国长沙",
     heroTitle: "人工智能时代的因果推断",
     heroLeadTitle: "烟花会议：经济科学学会第一届亚洲会议",
     heroLeadOrganizers: "主办单位：经济科学学会；中南大学",
@@ -243,7 +243,7 @@ export const copy = {
     heroPrimary: "论文投稿",
     heroSecondary: "演讲人",
     facts: [
-      { label: "日期", value: "2026年11月11–13日" },
+      { label: "日期", value: "2026年11月11\u201113日" },
       { label: "地点", value: "中国长沙" },
       { label: "截稿", value: "2026年10月23日 AoE" },
     ],
