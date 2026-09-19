@@ -73,9 +73,10 @@ body {
 }
 
 .speaker-photo {
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 3 / 4;
+  height: auto;
   object-fit: cover;
-  object-position: top center;
+  object-position: center 18%;
   filter: saturate(0.88) contrast(1.04);
 }
 

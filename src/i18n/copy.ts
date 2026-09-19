@@ -347,7 +347,7 @@ export const copy = {
         role: "中南大学商学院",
       },
       {
-        name: "Jianxin Wang / 王建新",
+        name: "Jianxin Wang",
         role: "中南大学商学院",
       },
       {
