@@ -106,13 +106,6 @@ export const copy = {
         bio: "James J. Heckman is an internationally renowned economist and the recipient of the 2000 Nobel Prize in Economic Sciences. He is the Henry Schultz Distinguished Service Professor of Economics at the University of Chicago and Director of the Center for the Economics of Human Development. Over the course of his academic career at the University of Chicago, he has held appointments in the Department of Economics, the Harris School of Public Policy, and the Law School. He received the Nobel Prize for pioneering the theory and methods for analyzing selective samples. He is widely recognized for his work in microeconometrics, labor economics, human capital theory, and policy evaluation. His research has appeared in leading international journals including Econometrica, American Economic Review, Journal of Political Economy, Quarterly Journal of Economics, and Review of Economic Studies.",
       },
       {
-        badge: "President and Founder of Economic Science Society",
-        name: "Daniel Houser",
-        role: "George Mason University, Department of Economics",
-        photo: withBase("speakers/houser.jpg"),
-        bio: "Professor Daniel Houser is the founding president of the Economic Science Society. He is Chair of the Department of Economics at George Mason University and Director of the Interdisciplinary Center for Economic Science. He has collaborated closely with Vernon Smith, a pioneer of experimental economics and recipient of the 2002 Nobel Prize in Economic Sciences. His main research areas include experimental economics, behavioral economics, and neuroeconomics. He has served as editor, associate editor, or editorial board member of journals including Management Science, Experimental Economics, and Journal of Economic Behavior & Organization, and has published papers in journals including PNAS, American Economic Review, Econometrica, Journal of Finance, Management Science, and Experimental Economics.",
-      },
-      {
         badge: "Invited Speaker",
         name: "Jie Zheng",
         role: "The Center for Economic Research, Shandong University",
@@ -374,13 +367,6 @@ export const copy = {
         role: "芝加哥大学",
         photo: withBase("speakers/heckman.jpg"),
         bio: "James Heckman 是国际著名经济学家、2000年诺贝尔经济学奖获得者。他现为芝加哥大学亨利·舒尔茨经济学杰出贡献教授，并担任人类发展经济学中心主任。他在芝加哥大学的学术生涯中，曾任职于经济系、哈里斯公共政策学院与法学院。他因在选择性样本分析的理论与方法上的开创性贡献而获得诺贝尔经济学奖。他被广泛认为是微观计量经济学、劳动经济学、人力资本理论与政策评估领域最具影响力的学者之一。其成果发表于《计量经济学杂志》《美国经济评论》《政治经济学杂志》《经济学季刊》《经济研究评论》等国际顶尖经济学期刊。",
-      },
-      {
-        badge: "经济科学学会创始主席",
-        name: "Daniel Houser",
-        role: "乔治梅森大学经济系",
-        photo: withBase("speakers/houser.jpg"),
-        bio: "Daniel Houser 教授是经济科学学会创始会长。他是乔治梅森大学经济系主任、跨学科经济科学中心主任。他与实验经济学先驱、2002年诺贝尔经济学奖获得者 Vernon Smith 密切合作。主要研究领域包括实验经济学、行为经济学与神经经济学。他曾任《管理科学》《实验经济学》《经济行为与组织杂志》等学术期刊的主编、副主编或编委会成员，并在《美国国家科学院院刊》《美国经济评论》《计量经济学杂志》《金融杂志》《管理科学》《实验经济学》等期刊发表论文。",
       },
       {
         badge: "邀请演讲",
