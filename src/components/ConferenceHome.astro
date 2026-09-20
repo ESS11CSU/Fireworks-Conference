@@ -106,10 +106,10 @@ const kickerClass = isZh ? "font-sans font-bold" : "font-semibold";
       </p>
       <h2 class:list={["mt-3 text-3xl sm:text-4xl", titleClass]} style="color: var(--ink);">{c.topicsTitle}</h2>
       <p class="mt-5 max-w-3xl" style="color: var(--muted);">{c.topicsNote}</p>
-      <div class="mt-10 grid gap-5 sm:grid-cols-2">
+      <div class="topics-grid mt-10">
         {
           c.topics.map((topic, index) => (
-            <article class="card-hover rounded-3xl p-6" style="background: var(--card);">
+            <article class="card-hover w-full min-w-0 rounded-3xl p-6" style="background: var(--card);">
               <div
                 class:list={[
                   "mb-4 h-1.5 w-12 rounded-full bg-gradient-to-r to-transparent",

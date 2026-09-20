@@ -59,19 +59,19 @@ export const copy = {
     hostValue: "Business School, Central South University",
     orgs: [
       {
-        title: "Central South University",
-        href: "https://www.csu.edu.cn/",
-        body: "Central South University (CSU) is located in Changsha, Hunan Province, a renowned historical and cultural city in China. It is one of the 31 universities directly administered by the central government, a key university under Project 985, one of the first universities included in Project 211, and one of the first leading universities under the 2011 Plan. In 2017, CSU was selected as a Category A university under China’s World-Class University initiative, and in 2022, it was included in the second round of the national “Double First-Class” initiative. CSU has ranked among the world’s top 100 universities in the Academic Ranking of World Universities (ARWU) for three consecutive years. In 2025, it ranked 13th in China and 146th in the U.S. News Best Global Universities Rankings 2025–2026.",
-      },
-      {
         title: "Economic Science Society",
         href: "https://economicsciencesociety.org/",
-        body: "The Economic Science Society (ESS) is dedicated to advancing the frontier of causal inference to ensure economic insights are grounded in scientific rigor. We promote methodological diversity, spanning the development of novel estimators for observational data, innovative experimental design and analysis, and the integration of AI into causal research. By prioritizing rigorous identification, ESS empowers evidence-based policy for the global good.",
+        body: "The Economic Science Society (ESS) is dedicated to advancing the frontier of causal inference so that economic insights are grounded in scientific rigor. It promotes methodological diversity—including observational-data methods, experimental design and analysis, and the integration of AI into causal research—and prioritizes rigorous identification to support evidence-based policy.",
+      },
+      {
+        title: "Central South University",
+        href: "https://www.csu.edu.cn/",
+        body: "Central South University (CSU) is located in Changsha, Hunan Province. It is a key university under Project 985 and Project 211, a Category A university under China’s World-Class University initiative, and part of the national “Double First-Class” initiative. CSU has ranked among the world’s top 100 universities in the Academic Ranking of World Universities (ARWU) for three consecutive years, and in 2025 ranked 13th in China and 146th in the U.S. News Best Global Universities Rankings 2025–2026.",
       },
       {
         title: "Business School, Central South University",
         href: "https://bs.csu.edu.cn/",
-        body: "The Business School of Central South University is among the leading schools in economics and management in China. Its academic disciplines span both management and economics, covering three first-level disciplines: Management Science and Engineering, Business Administration, and Applied Economics. The school hosts postdoctoral research stations in Management Science and Engineering and Business Administration, and is authorized to confer doctoral and master’s degrees in these three first-level disciplines. It also offers a professional doctoral degree in Accounting, as well as professional master’s programs including EMBA, MBA, MPAcc, and Master of Finance. Management Science and Engineering is designated as a National Key Discipline and received an A-level rating in China’s fifth round of national discipline evaluation. All five undergraduate programs—Information Management and Information Systems, Business Administration, Accounting, International Economics and Trade, and Finance—have been selected as National First-Class Undergraduate Programs. Economics and Business at CSU ranks among the global top 1% in the Essential Science Indicators (ESI). The school has earned both AACSB and AMBA international accreditations, achieving “double-crown” accreditation and placing it among the top 6% of business schools worldwide.",
+        body: "The Business School of Central South University is among the leading schools in economics and management in China, covering Management Science and Engineering, Business Administration, and Applied Economics. Management Science and Engineering is a National Key Discipline with an A-level rating in the fifth round of national discipline evaluation, and Economics and Business at CSU ranks among the global top 1% in ESI. The school has earned AACSB and AMBA accreditations, placing it among the top 6% of business schools worldwide.",
       },
     ],
     topicsKicker: "Call for papers",
@@ -103,14 +103,14 @@ export const copy = {
         name: "James Heckman",
         role: "University of Chicago",
         photo: withBase("speakers/heckman.jpg"),
-        bio: "James J. Heckman is an internationally renowned economist and the recipient of the 2000 Nobel Prize in Economic Sciences. He is currently the Henry Schultz Distinguished Service Professor of Economics at the University of Chicago and Director of the Center for the Economics of Human Development. Over the course of his distinguished academic career at the University of Chicago, he has held appointments in the Department of Economics, the Harris School of Public Policy, and the Law School. Professor Heckman is widely recognized as one of the most influential scholars in microeconometrics, labor economics, human capital theory, and policy evaluation.\n\nProfessor Heckman was awarded the Nobel Prize in Economic Sciences for his pioneering contributions to the theory and methods for analyzing selective samples. The econometric models and methods he developed have profoundly shaped research on education, employment, income distribution, social mobility, and public policy evaluation. His research has appeared in leading international journals in economics, including Econometrica, American Economic Review, Journal of Political Economy, Quarterly Journal of Economics, and Review of Economic Studies. He has had a broad and lasting influence on economic research worldwide.\n\nProfessor Heckman has maintained close academic and policy-related engagement with China and has long been interested in issues concerning early childhood development, human capital formation, and social mobility in the Chinese context. He has contributed to advancing data-driven research and policy evaluation grounded in China’s development experience. His research on early childhood investment, skill formation, and equitable development offers important insights into the allocation of educational resources, the enhancement of human capital, the promotion of equality of opportunity, and improvements in social mobility. More broadly, his work provides important theoretical foundations and empirical evidence for the design of education policy, anti-poverty programs, and social policies around the world.",
+        bio: "James J. Heckman is an internationally renowned economist and the recipient of the 2000 Nobel Prize in Economic Sciences. He is the Henry Schultz Distinguished Service Professor of Economics at the University of Chicago and Director of the Center for the Economics of Human Development. He received the Nobel Prize for pioneering the theory and methods for analyzing selective samples, and is widely recognized for his work in microeconometrics, labor economics, human capital theory, and policy evaluation.",
       },
       {
         badge: "President and Founder of Economic Science Society",
         name: "Daniel Houser",
         role: "George Mason University, Department of Economics",
         photo: withBase("speakers/houser.jpg"),
-        bio: "Professor Daniel Houser is the founding president of the Economic Science Society. He is Chair of the Department of Economics at George Mason University and Director of the Interdisciplinary Center for Economic Science at George Mason University. He has collaborated closely with Vernon Smith, a pioneer of experimental economics and recipient of the 2002 Nobel Prize in Economic Sciences. His main research areas include experimental economics, behavioral economics, and neuroeconomics.\n\nProfessor Houser has served as editor, associate editor, or editorial board member of academic journals including Management Science, Experimental Economics, Journal of Economic Behavior & Organization, and Journal of Neuroscience, Psychology, and Economics. He has also served as a reviewer for more than twenty academic journals and funding agencies, including Science, Nature, PNAS, and the National Science Foundation. He has received multiple grants from the National Science Foundation and has published papers in journals including PNAS, American Economic Review, Econometrica, Journal of Finance, Management Science, Leadership Quarterly, and Experimental Economics.",
+        bio: "Professor Daniel Houser is the founding president of the Economic Science Society. He is Chair of the Department of Economics at George Mason University and Director of the Interdisciplinary Center for Economic Science. His main research areas include experimental economics, behavioral economics, and neuroeconomics.",
       },
       {
         badge: "Invited Speaker",
@@ -323,19 +323,19 @@ export const copy = {
     hostValue: "中南大学商学院",
     orgs: [
       {
-        title: "中南大学",
-        href: "https://www.csu.edu.cn/",
-        body: "中南大学位于中国历史文化名城湖南省长沙市。中南大学是中央直管高校之一、国家“985工程”重点建设高校、首批“211工程”高校、首批“2011计划”高校。2017年入选世界一流大学建设高校（A类），2022年入选第二轮国家“双一流”建设。中南大学已连续三年进入软科世界大学学术排名世界百强。2025年，在《美国新闻与世界报道》2025–2026世界大学排行中位列中国第13、全球第146。",
-      },
-      {
         title: "经济科学学会",
         href: "https://economicsciencesociety.org/",
-        body: "经济科学学会致力于推进因果推断前沿，使经济学洞见建立在科学严谨之上。学会倡导方法多样性，涵盖观测数据新估计量的发展、创新的实验设计与分析，以及将人工智能融入因果研究。通过强调严谨识别，学会为全球公共利益提供循证政策支持。",
+        body: "经济科学学会致力于推进因果推断前沿，使经济学洞见建立在科学严谨之上。学会倡导方法多样性，涵盖观测数据方法、实验设计与分析，以及将人工智能融入因果研究，并通过严谨识别支持循证政策。",
+      },
+      {
+        title: "中南大学",
+        href: "https://www.csu.edu.cn/",
+        body: "中南大学位于湖南省长沙市，是国家“985工程”“211工程”重点建设高校，并入选世界一流大学建设高校（A类）与国家“双一流”建设。中南大学已连续三年进入软科世界大学学术排名世界百强。2025年，在《美国新闻与世界报道》2025–2026世界大学排行中位列中国第13、全球第146。",
       },
       {
         title: "中南大学商学院",
         href: "https://bs.csu.edu.cn/",
-        body: "中南大学商学院是中国经济学与管理学领域的领先学院之一。学科覆盖管理学与经济学，包括管理科学与工程、工商管理、应用经济学三个一级学科。学院设有管理科学与工程、工商管理博士后科研流动站，并具有上述三个一级学科的博士与硕士学位授予权；同时开设会计专业博士，以及高级管理人员工商管理硕士、工商管理硕士、会计硕士、金融硕士等专业硕士项目。管理科学与工程为国家重点学科，在第五轮学科评估中获评A类。信息管理与信息系统、工商管理、会计学、国际经济与贸易、金融学五个本科专业全部入选国家级一流本科专业。中南大学经济与商学学科进入基本科学指标数据库全球前1%。学院已获得国际商学院协会认证与工商管理硕士协会认证，实现“双冠”认证，跻身全球商学院前6%。",
+        body: "中南大学商学院是中国经济学与管理学领域的领先学院之一，学科覆盖管理科学与工程、工商管理与应用经济学。管理科学与工程为国家重点学科，在第五轮学科评估中获评A类；经济与商学学科进入基本科学指标数据库全球前1%。学院已获得国际商学院协会认证与工商管理硕士协会认证，跻身全球商学院前6%。",
       },
     ],
     topicsKicker: "征稿",
@@ -366,14 +366,14 @@ export const copy = {
         name: "James Heckman",
         role: "芝加哥大学",
         photo: withBase("speakers/heckman.jpg"),
-        bio: "James J. Heckman 是国际著名经济学家、2000年诺贝尔经济学奖获得者。他现为芝加哥大学亨利·舒尔茨经济学杰出贡献教授，并担任人类发展经济学中心主任。他在芝加哥大学的学术生涯中，曾任职于经济系、哈里斯公共政策学院与法学院。Heckman 教授被广泛认为是微观计量经济学、劳动经济学、人力资本理论与政策评估领域最具影响力的学者之一。\n\nHeckman 教授因在选择性样本分析的理论与方法上的开创性贡献而获得诺贝尔经济学奖。他发展的计量模型与方法，深刻影响了教育、就业、收入分配、社会流动与公共政策评估研究。其成果发表于《计量经济学杂志》《美国经济评论》《政治经济学杂志》《经济学季刊》《经济研究评论》等国际顶尖经济学期刊，对全球经济研究产生了广泛而持久的影响。\n\nHeckman 教授长期与中国保持密切的学术与政策联系，持续关注中国情境下的早期儿童发展、人力资本形成与社会流动。他推动以中国发展经验为基础的数据驱动研究与政策评估。他关于早期儿童投资、技能形成与公平发展的研究，为教育资源配置、人力资本提升、机会平等与社会流动改善提供了重要启示。更广泛地，他的工作为世界各国的教育政策、减贫项目与社会政策设计提供了重要的理论基础与经验证据。",
+        bio: "James J. Heckman 是国际著名经济学家、2000年诺贝尔经济学奖获得者。他现为芝加哥大学亨利·舒尔茨经济学杰出贡献教授，并担任人类发展经济学中心主任。他因在选择性样本分析的理论与方法上的开创性贡献而获奖，并被广泛认为是微观计量经济学、劳动经济学、人力资本理论与政策评估领域最具影响力的学者之一。",
       },
       {
         badge: "经济科学学会创始主席",
         name: "Daniel Houser",
         role: "乔治梅森大学经济系",
         photo: withBase("speakers/houser.jpg"),
-        bio: "Daniel Houser 教授是经济科学学会创始会长。他是乔治梅森大学经济系主任、乔治梅森大学跨学科经济科学中心主任。他与实验经济学先驱、2002年诺贝尔经济学奖获得者 Vernon Smith 密切合作。主要研究领域包括实验经济学、行为经济学与神经经济学。\n\nHouser 教授曾任《管理科学》《实验经济学》《经济行为与组织杂志》以及《神经科学、心理学与经济学杂志》等学术期刊的主编、副主编或编委会成员。他还为《科学》《自然》《美国国家科学院院刊》以及美国国家科学基金会等二十余家学术期刊与资助机构担任评审。他多次获得美国国家科学基金会资助，并在《美国国家科学院院刊》《美国经济评论》《计量经济学杂志》《金融杂志》《管理科学》《领导力季刊》《实验经济学》等期刊发表论文。",
+        bio: "Daniel Houser 教授是经济科学学会创始会长。他是乔治梅森大学经济系主任、乔治梅森大学跨学科经济科学中心主任。主要研究领域包括实验经济学、行为经济学与神经经济学。",
       },
       {
         badge: "邀请演讲",
