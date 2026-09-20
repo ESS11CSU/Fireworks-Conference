@@ -274,7 +274,6 @@ export const copy = {
     ],
     footerCredit:
       "Firework Conference: Economic Science Society 1st Asia Meeting",
-    footerNote: "Conference information follows the Call for Papers.",
     essLinkLabel: "Economic Science Society",
     essHref: "https://economicsciencesociety.org/",
   },
@@ -446,7 +445,7 @@ export const copy = {
     committeeLabel: "组织委员会",
     committee: [
       {
-        name: "Zijun Luo",
+        name: "罗子俊",
         role: "内布拉斯加大学奥马哈分校经济系",
       },
       {
@@ -540,7 +539,6 @@ export const copy = {
       },
     ],
     footerCredit: "烟花会议：经济科学学会第一届亚洲会议",
-    footerNote: "会议信息以征稿启事为准。",
     essLinkLabel: "经济科学学会",
     essHref: "https://economicsciencesociety.org/",
   },
