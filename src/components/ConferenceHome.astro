@@ -31,9 +31,7 @@ const kickerClass = isZh ? "font-sans font-bold" : "font-semibold";
   <SiteHeader lang={lang} />
 
   <main>
-    <section
-      class:list={["relative mx-auto px-5 pb-20 pt-16 sm:pt-24", isZh ? "max-w-6xl" : "max-w-[90rem]"]}
-    >
+    <section class="relative mx-auto max-w-6xl px-5 pb-20 pt-16 sm:pt-24">
       <p class:list={["text-xs uppercase tracking-[0.32em]", kickerClass]} style="color: var(--accent-cyan);">
         {c.heroEyebrow}
       </p>
@@ -42,7 +40,7 @@ const kickerClass = isZh ? "font-sans font-bold" : "font-semibold";
           "mt-5 leading-[1.15]",
           isZh
             ? "max-w-5xl text-4xl sm:text-6xl lg:text-7xl"
-            : "max-w-none text-3xl sm:text-5xl lg:text-5xl 2xl:text-6xl",
+            : "w-[90rem] max-w-[calc(100vw-2.5rem)] text-3xl sm:text-5xl lg:text-5xl 2xl:text-6xl",
           titleClass,
         ]}
         style="color: var(--ink);"
