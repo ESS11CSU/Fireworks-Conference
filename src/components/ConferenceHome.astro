@@ -123,6 +123,33 @@ const kickerClass = isZh ? "font-sans font-bold" : "font-semibold";
       </div>
     </section>
 
+    <section id="co-chairs" class="mx-auto max-w-6xl px-5 py-20">
+      <p class:list={["text-xs uppercase tracking-[0.32em]", kickerClass]} style="color: var(--accent-cyan);">
+        {c.chairsLabel}
+      </p>
+      <h2 class:list={["mt-3 text-3xl sm:text-4xl", titleClass]} style="color: var(--ink);">{c.chairsLabel}</h2>
+      <div class="mt-10 grid gap-5 md:grid-cols-3">
+        {
+          c.chairs.map((person) => (
+            <article class="card-hover rounded-3xl p-6" style="background: var(--card);">
+              <div class="speaker-photo-frame">
+                <img
+                  src={person.photo}
+                  alt={person.name}
+                  class="speaker-photo"
+                  width="144"
+                  height="216"
+                />
+              </div>
+              <h3 class:list={["mt-4 text-xl", titleClass]} style="color: var(--ink);">{person.name}</h3>
+              <p class="mt-2 text-sm font-semibold leading-relaxed" style="color: var(--accent-cyan);">{person.title}</p>
+              <p class="mt-1 text-sm" style="color: var(--muted);">{person.role}</p>
+            </article>
+          ))
+        }
+      </div>
+    </section>
+
     <section id="speakers" class="mx-auto max-w-6xl px-5 py-20">
       <p class:list={["text-xs uppercase tracking-[0.32em]", kickerClass]} style="color: var(--accent-lime);">
         {c.speakersKicker}
@@ -155,85 +182,6 @@ const kickerClass = isZh ? "font-sans font-bold" : "font-semibold";
                   ))}
                 </div>
               </div>
-            </article>
-          ))
-        }
-      </div>
-    </section>
-
-    <section id="organizers" class="mx-auto max-w-6xl px-5 py-20">
-      <p class:list={["text-xs uppercase tracking-[0.32em]", kickerClass]} style="color: var(--accent-fuchsia);">
-        {c.organizersLabel}
-      </p>
-      <h2 class:list={["mt-3 text-3xl sm:text-4xl", titleClass]} style="color: var(--ink);">{c.organizersSectionTitle}</h2>
-      <dl class="mt-8 grid gap-4 sm:grid-cols-2">
-        <div class="card-hover rounded-3xl p-6" style="background: var(--card);">
-          <dt class="text-xs uppercase tracking-[0.2em]" style="color: var(--faint);">{c.organizersLabel}</dt>
-          <dd class="mt-2" style="color: var(--ink);">{c.organizersValue}</dd>
-        </div>
-        <div class="card-hover rounded-3xl p-6" style="background: var(--card);">
-          <dt class="text-xs uppercase tracking-[0.2em]" style="color: var(--faint);">{c.hostLabel}</dt>
-          <dd class="mt-2" style="color: var(--ink);">{c.hostValue}</dd>
-        </div>
-      </dl>
-      <div class="mt-10 grid gap-5 lg:grid-cols-3">
-        {
-          c.orgs.map((org) => (
-            <article class="card-hover rounded-3xl p-6" style="background: var(--card);">
-              <h3 class:list={["text-xl", titleClass]} style="color: var(--ink);">{org.title}</h3>
-              <p class="mt-3 text-sm leading-relaxed" style="color: var(--muted);">{org.body}</p>
-              <a
-                class="mt-4 inline-block text-sm underline-offset-4 hover:underline"
-                href={org.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                style="color: var(--accent-cyan);"
-              >
-                {org.href.replace("https://", "")}
-              </a>
-            </article>
-          ))
-        }
-      </div>
-    </section>
-
-    <section id="leadership" class="mx-auto max-w-6xl px-5 py-20">
-      <p class:list={["text-xs uppercase tracking-[0.32em]", kickerClass]} style="color: var(--accent-cyan);">
-        {c.leadershipKicker}
-      </p>
-      <h2 class:list={["mt-3 text-3xl sm:text-4xl", titleClass]} style="color: var(--ink);">{c.leadershipTitle}</h2>
-      <h3 class:list={["mt-10 text-sm uppercase tracking-[0.2em]", kickerClass]} style="color: var(--accent-gold);">
-        {c.chairsLabel}
-      </h3>
-      <div class="mt-4 grid gap-5 md:grid-cols-3">
-        {
-          c.chairs.map((person) => (
-            <article class="card-hover rounded-3xl p-6" style="background: var(--card);">
-              <div class="speaker-photo-frame">
-                <img
-                  src={person.photo}
-                  alt={person.name}
-                  class="speaker-photo"
-                  width="144"
-                  height="216"
-                />
-              </div>
-              <h4 class:list={["mt-4 text-xl", titleClass]} style="color: var(--ink);">{person.name}</h4>
-              <p class="mt-2 text-sm font-semibold leading-relaxed" style="color: var(--accent-cyan);">{person.title}</p>
-              <p class="mt-1 text-sm" style="color: var(--muted);">{person.role}</p>
-            </article>
-          ))
-        }
-      </div>
-      <h3 class:list={["mt-12 text-sm uppercase tracking-[0.2em]", kickerClass]} style="color: var(--accent-gold);">
-        {c.committeeLabel}
-      </h3>
-      <div class="mt-4 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
-        {
-          c.committee.map((person) => (
-            <article class="card-hover rounded-3xl p-6" style="background: var(--card);">
-              <h4 class:list={["text-xl", titleClass]} style="color: var(--ink);">{person.name}</h4>
-              <p class="mt-2 text-sm" style="color: var(--muted);">{person.role}</p>
             </article>
           ))
         }
@@ -313,6 +261,55 @@ const kickerClass = isZh ? "font-sans font-bold" : "font-semibold";
         <p class:list={["text-xs uppercase tracking-[0.22em]", kickerClass]} style="color: var(--accent-cyan);">{c.programDates}</p>
         <p class:list={["mt-3 text-3xl", titleClass]} style="color: var(--accent-gold);">{c.programNote}</p>
         <p class="mt-4 max-w-2xl" style="color: var(--muted);">{c.programDetail}</p>
+      </div>
+    </section>
+
+    <section id="organizers" class="mx-auto max-w-6xl px-5 py-20">
+      <p class:list={["text-xs uppercase tracking-[0.32em]", kickerClass]} style="color: var(--accent-fuchsia);">
+        {c.organizersLabel}
+      </p>
+      <h2 class:list={["mt-3 text-3xl sm:text-4xl", titleClass]} style="color: var(--ink);">{c.organizersSectionTitle}</h2>
+      <dl class="mt-8 grid gap-4 sm:grid-cols-2">
+        <div class="card-hover rounded-3xl p-6" style="background: var(--card);">
+          <dt class="text-xs uppercase tracking-[0.2em]" style="color: var(--faint);">{c.organizersLabel}</dt>
+          <dd class="mt-2" style="color: var(--ink);">{c.organizersValue}</dd>
+        </div>
+        <div class="card-hover rounded-3xl p-6" style="background: var(--card);">
+          <dt class="text-xs uppercase tracking-[0.2em]" style="color: var(--faint);">{c.hostLabel}</dt>
+          <dd class="mt-2" style="color: var(--ink);">{c.hostValue}</dd>
+        </div>
+      </dl>
+      <div class="mt-10 grid gap-5 lg:grid-cols-3">
+        {
+          c.orgs.map((org) => (
+            <article class="card-hover rounded-3xl p-6" style="background: var(--card);">
+              <h3 class:list={["text-xl", titleClass]} style="color: var(--ink);">{org.title}</h3>
+              <p class="mt-3 text-sm leading-relaxed" style="color: var(--muted);">{org.body}</p>
+              <a
+                class="mt-4 inline-block text-sm underline-offset-4 hover:underline"
+                href={org.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                style="color: var(--accent-cyan);"
+              >
+                {org.href.replace("https://", "")}
+              </a>
+            </article>
+          ))
+        }
+      </div>
+      <h3 class:list={["mt-12 text-sm uppercase tracking-[0.2em]", kickerClass]} style="color: var(--accent-gold);">
+        {c.committeeLabel}
+      </h3>
+      <div class="mt-4 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        {
+          c.committee.map((person) => (
+            <article class="card-hover rounded-3xl p-6" style="background: var(--card);">
+              <h4 class:list={["text-xl", titleClass]} style="color: var(--ink);">{person.name}</h4>
+              <p class="mt-2 text-sm" style="color: var(--muted);">{person.role}</p>
+            </article>
+          ))
+        }
       </div>
     </section>
 

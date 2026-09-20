@@ -26,10 +26,10 @@ export const copy = {
     nav: [
       { href: "#about", label: "About" },
       { href: "#topics", label: "Topics" },
+      { href: "#co-chairs", label: "Co-Chairs" },
       { href: "#speakers", label: "Speakers" },
-      { href: "#organizers", label: "Organizers" },
-      { href: "#leadership", label: "Leadership" },
       { href: "#submit", label: "Submit" },
+      { href: "#organizers", label: "Organizers" },
     ],
     heroEyebrow: "November 11–13, 2026 · Changsha, China",
     heroTitle: "Firework Conference: Economic Science Society 1st Asia Meeting",
@@ -141,8 +141,6 @@ export const copy = {
         bio: "Erte Xiao is a professor in the Department of Economics at Monash University. She conducts research on the motivational and behavioral consequences of extrinsic incentives and social preferences on decisions. Her work has been published in journals such as PNAS, The Economic Journal, Journal of Public Economics, Games and Economic Behavior, and Management Science.",
       },
     ],
-    leadershipKicker: "Leadership",
-    leadershipTitle: "Co-Chairs and organizing committee",
     chairsLabel: "Conference Co-Chairs",
     chairs: [
       {
@@ -291,10 +289,10 @@ export const copy = {
     nav: [
       { href: "#about", label: "关于" },
       { href: "#topics", label: "议题" },
+      { href: "#co-chairs", label: "共同主席" },
       { href: "#speakers", label: "演讲人" },
-      { href: "#organizers", label: "主办" },
-      { href: "#leadership", label: "组织" },
       { href: "#submit", label: "投稿" },
+      { href: "#organizers", label: "主办" },
     ],
     heroEyebrow: "2026年11月11\u201113日 · 中国长沙",
     heroTitle: "烟花会议：经济科学学会第一届亚洲会议",
@@ -404,8 +402,6 @@ export const copy = {
         bio: "肖尔特是莫纳什大学经济系教授。她的研究旨在理解外在激励与社会偏好对决策的动机与行为后果。研究成果发表于《美国国家科学院院刊》《经济学杂志》《公共经济学杂志》《博弈与经济行为》《管理科学》等期刊。",
       },
     ],
-    leadershipKicker: "组织",
-    leadershipTitle: "共同主席与组委会",
     chairsLabel: "会议共同主席",
     chairs: [
       {
