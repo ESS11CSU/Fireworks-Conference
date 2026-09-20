@@ -173,6 +173,7 @@ export const copy = {
         ],
       },
     ],
+    committeeKicker: "Committee",
     committeeLabel: "Organizing Committee",
     committee: [
       {
@@ -233,7 +234,7 @@ export const copy = {
       "Please send the submission materials to the designated conference email address. The email subject line should follow the format:",
     submitSessionSubject: "ESS Submission + Session Name + Organizer Name + Affiliation",
     submitEmailLabel: "Submission email",
-    submitEmail: "tobeannounced@csu.edu.cn",
+    submitEmail: "essmeeting@csu.edu.cn",
     reviewNote:
       "All submissions will be reviewed by a panel of experts. Authors of selected papers will be invited to present their research at the conference.",
     deadlineLabel: "Submission deadline",
@@ -273,8 +274,7 @@ export const copy = {
     ],
     footerCredit:
       "Firework Conference: Economic Science Society 1st Asia Meeting",
-    footerNote:
-      "Local preview only. Deployment is out of scope. Conference facts follow the Call for Papers.",
+    footerNote: "Conference information follows the Call for Papers.",
     essLinkLabel: "Economic Science Society",
     essHref: "https://economicsciencesociety.org/",
   },
@@ -442,6 +442,7 @@ export const copy = {
         ],
       },
     ],
+    committeeKicker: "委员会",
     committeeLabel: "组织委员会",
     committee: [
       {
@@ -500,7 +501,7 @@ export const copy = {
     submitSessionHow: "请将投稿材料发送至会议指定邮箱。邮件主题格式为：",
     submitSessionSubject: "ESS Submission + 分会名称 + 组织者姓名 + 单位",
     submitEmailLabel: "投稿邮箱",
-    submitEmail: "tobeannounced@csu.edu.cn",
+    submitEmail: "essmeeting@csu.edu.cn",
     reviewNote:
       "所有投稿将由专家审稿。入选论文作者将获邀在会议上报告其研究。",
     deadlineLabel: "投稿截止日期",
@@ -539,7 +540,7 @@ export const copy = {
       },
     ],
     footerCredit: "烟花会议：经济科学学会第一届亚洲会议",
-    footerNote: "仅供本地预览，不包含部署。会议信息以征稿启事为准。",
+    footerNote: "会议信息以征稿启事为准。",
     essLinkLabel: "经济科学学会",
     essHref: "https://economicsciencesociety.org/",
   },

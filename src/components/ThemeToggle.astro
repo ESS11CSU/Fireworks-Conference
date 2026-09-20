@@ -13,14 +13,14 @@ const c = t(lang);
 <button
   id="theme-toggle"
   type="button"
-  class="inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-xs font-semibold tracking-wide"
+  class="inline-flex h-10 w-10 shrink-0 items-center justify-center gap-1.5 whitespace-nowrap rounded-full border p-0 text-xs font-semibold tracking-wide sm:h-auto sm:w-auto sm:px-3 sm:py-1"
   style="border-color: var(--line-strong); color: var(--ink);"
   aria-label={c.themeToDark}
   data-label-light={c.themeToLight}
   data-label-dark={c.themeToDark}
 >
-  <span id="theme-toggle-icon" aria-hidden="true">☾</span>
-  <span id="theme-toggle-text">{c.themeToDark}</span>
+  <span id="theme-toggle-icon" class="text-base leading-none" aria-hidden="true">☾</span>
+  <span id="theme-toggle-text" class="hidden sm:inline">{c.themeToDark}</span>
 </button>
 
 <script>
