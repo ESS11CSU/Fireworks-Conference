@@ -145,22 +145,28 @@ export const copy = {
     chairs: [
       {
         name: "Daniel Houser",
-        title:
-          "Founding President, Economic Science Society; Chair, Department of Economics, George Mason University",
-        role: "George Mason University, Department of Economics",
         photo: withBase("speakers/houser.jpg"),
+        posts: [
+          { role: "Founding President", org: "Economic Science Society" },
+          { role: "Chair", org: "Department of Economics, George Mason University" },
+        ],
       },
       {
         name: "Zongrun Wang",
-        title: "Dean, Business School, Central South University",
-        role: "Business School, Central South University",
         photo: withBase("speakers/wang.jpg"),
+        posts: [
+          { role: "Dean", org: "Business School, Central South University" },
+        ],
       },
       {
         name: "Yulei Rao",
-        title: "Director, Financial Innovation Research Center, Central South University",
-        role: "Business School, Central South University",
         photo: withBase("speakers/rao.jpg"),
+        posts: [
+          {
+            role: "Director",
+            org: "Financial Innovation Research Center, Business School, Central South University",
+          },
+        ],
       },
     ],
     committeeLabel: "Organizing Committee",
@@ -406,21 +412,26 @@ export const copy = {
     chairs: [
       {
         name: "Daniel Houser",
-        title: "经济科学学会（ESS）创始主席；乔治梅森大学经济系系主任",
-        role: "乔治梅森大学经济系",
         photo: withBase("speakers/houser.jpg"),
+        posts: [
+          { role: "创始主席", org: "经济科学学会" },
+          { role: "系主任", org: "乔治梅森大学经济系" },
+        ],
       },
       {
         name: "王宗润",
-        title: "中南大学商学院院长",
-        role: "中南大学商学院",
         photo: withBase("speakers/wang.jpg"),
+        posts: [{ role: "院长", org: "中南大学商学院" }],
       },
       {
         name: "饶育蕾",
-        title: "中南大学金融创新研究中心主任",
-        role: "中南大学商学院",
         photo: withBase("speakers/rao.jpg"),
+        posts: [
+          {
+            role: "主任",
+            org: "中南大学金融创新研究中心，中南大学商学院",
+          },
+        ],
       },
     ],
     committeeLabel: "组织委员会",
