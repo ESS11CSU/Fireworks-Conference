@@ -45,8 +45,7 @@ export const copy = {
       { label: "Venue", value: "Changsha, China" },
       { label: "Deadline", value: "23 Oct 2026 AoE" },
     ],
-    aboutImageAlt: "Conference artwork with fireworks, a globe, and a city skyline",
-    aboutImageCredit: "Organizer-provided artwork",
+    aboutImageAlt: "Firework Conference decorative banner with fireworks and a city skyline",
     aboutKicker: "About the meeting",
     aboutTitle: "Causal Inference in the Age of AI",
     aboutBody:
@@ -264,8 +263,7 @@ export const copy = {
       { label: "地点", value: "中国长沙" },
       { label: "截稿", value: "2026年10月23日（全球任意时区）" },
     ],
-    aboutImageAlt: "烟花、地球与城市天际线会议海报",
-    aboutImageCredit: "主办方提供的会议海报",
+    aboutImageAlt: "烟花与城市天际线装饰图",
     aboutKicker: "关于会议",
     aboutTitle: "人工智能时代的因果推断",
     aboutBody:
