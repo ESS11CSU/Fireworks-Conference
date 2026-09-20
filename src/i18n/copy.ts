@@ -450,7 +450,7 @@ export const copy = {
         role: "中南大学商学院",
       },
       {
-        name: "Qian Zhang",
+        name: "张骞",
         role: "中南大学商学院",
       },
       {
