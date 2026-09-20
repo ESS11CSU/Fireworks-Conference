@@ -35,7 +35,14 @@ const kickerClass = isZh ? "font-sans font-bold" : "font-semibold";
       <p class:list={["text-xs uppercase tracking-[0.32em]", kickerClass]} style="color: var(--accent-cyan);">
         {c.heroEyebrow}
       </p>
-      <h1 class:list={["mt-5 max-w-5xl text-4xl leading-[1.15] sm:text-6xl lg:text-7xl", titleClass]} style="color: var(--ink);">
+      <h1
+        class:list={[
+          "mt-5 leading-[1.15]",
+          isZh ? "max-w-5xl text-4xl sm:text-6xl lg:text-7xl" : "max-w-none text-3xl sm:text-5xl lg:text-6xl",
+          titleClass,
+        ]}
+        style="color: var(--ink);"
+      >
         <span class="block">{c.heroTitleLead}</span>
         <span class="block">{c.heroTitleRest}</span>
       </h1>
