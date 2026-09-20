@@ -4,7 +4,7 @@ Phase-1 conference website for the Firework Conference: Economic Science Society
 
 **Stack:** Astro + Tailwind CSS  
 **Languages:** English and 中文  
-**Live site:** https://Evelyn5114.github.io/firework-ess-asia-meeting/
+**Live site:** https://Evelyn5114.github.io/Fireworks-Conference/
 
 ## Local preview
 
@@ -13,10 +13,10 @@ npm install
 npm run dev
 ```
 
-Then open the URL Astro prints. Because `base` is `/firework-ess-asia-meeting/`, local dev is usually `http://localhost:4321/firework-ess-asia-meeting/`. `npm run dev` still works; the prefix is applied in both dev and the production build.
+Then open the URL Astro prints. Because `base` is `/Fireworks-Conference/`, local dev is usually `http://localhost:4321/Fireworks-Conference/`. `npm run dev` still works; the prefix is applied in both dev and the production build.
 
-- English: `/firework-ess-asia-meeting/`
-- 中文: `/firework-ess-asia-meeting/zh/`
+- English: `/Fireworks-Conference/`
+- 中文: `/Fireworks-Conference/zh/`
 
 The first visit in a browser session opens a colorful fireworks splash, centered in the viewport. It dismisses automatically after about 2.3 seconds, or immediately via **Enter the meeting** / **进入会议** or **Skip**. Later views in the same session skip the splash (`sessionStorage`).
 
@@ -35,9 +35,9 @@ The site deploys from `main` via `.github/workflows/deploy-pages.yml`.
 
 1. In the GitHub repo, open **Settings → Pages**.
 2. Set **Source** to **GitHub Actions** (one-time, if it is not already selected).
-3. After the workflow succeeds, the site is at https://Evelyn5114.github.io/firework-ess-asia-meeting/
+3. After the workflow succeeds, the site is at https://Evelyn5114.github.io/Fireworks-Conference/
 
-`npm run build` writes static files to `dist/` with asset paths under `/firework-ess-asia-meeting/`.
+`npm run build` writes static files to `dist/` with asset paths under `/Fireworks-Conference/`. The GitHub repository name must be **Fireworks-Conference** so project Pages matches this `base`.
 
 ## Notes
 

@@ -22,7 +22,7 @@ const c = t(lang);
         {c.brandSuffix}
       </span>
     </a>
-    <nav class="hidden items-center gap-3 text-sm lg:flex xl:gap-5" style="color: var(--muted);">
+    <nav class="hidden items-center gap-3 text-base font-medium lg:flex xl:gap-5 xl:text-lg" style="color: var(--muted);">
       {
         c.nav.map((item) => (
           <a class="transition hover:opacity-80" href={item.href} style="color: inherit;">
@@ -42,7 +42,7 @@ const c = t(lang);
       </a>
     </div>
   </div>
-  <nav class="flex gap-4 overflow-x-auto px-5 pb-3 text-xs lg:hidden" style="color: var(--muted);">
+  <nav class="flex gap-4 overflow-x-auto px-5 pb-3 text-sm font-medium lg:hidden" style="color: var(--muted);">
     {
       c.nav.map((item) => (
         <a class="shrink-0" href={item.href} style="color: inherit;">

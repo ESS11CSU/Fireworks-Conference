@@ -25,14 +25,12 @@ const kickerClass = isZh ? "font-sans font-bold" : "font-semibold";
       <p class:list={["text-xs uppercase tracking-[0.32em]", kickerClass]} style="color: var(--accent-cyan);">
         {c.heroEyebrow}
       </p>
-      <h1 class:list={["mt-5 max-w-4xl text-4xl leading-[1.15] sm:text-6xl", titleClass]} style="color: var(--ink);">
+      <h1 class:list={["mt-5 max-w-5xl text-4xl leading-[1.15] sm:text-6xl lg:text-7xl", titleClass]} style="color: var(--ink);">
         {c.heroTitle}
       </h1>
-      <div class="mt-6 max-w-2xl space-y-2 text-base leading-relaxed sm:text-lg" style="color: var(--muted);">
-        <p>{c.heroLeadTitle}</p>
-        <p>{c.heroLeadOrganizers}</p>
-        <p>{c.heroLeadHost}</p>
-      </div>
+      <p class:list={["mt-5 max-w-3xl text-lg leading-relaxed sm:text-2xl", isZh ? "font-sans font-semibold" : "font-display"]} style="color: var(--muted);">
+        {c.heroTheme}
+      </p>
       <div class="mt-8 flex flex-wrap gap-3">
         <a
           href="#submit"
@@ -91,35 +89,6 @@ const kickerClass = isZh ? "font-sans font-bold" : "font-semibold";
           <figcaption class="px-4 py-2 text-xs" style="color: var(--faint);">{c.aboutImageCredit}</figcaption>
         </figure>
       </div>
-      <dl class="mt-8 grid gap-4 sm:grid-cols-2">
-        <div class="card-hover rounded-3xl p-6" style="background: var(--card);">
-          <dt class="text-xs uppercase tracking-[0.2em]" style="color: var(--faint);">{c.organizersLabel}</dt>
-          <dd class="mt-2" style="color: var(--ink);">{c.organizersValue}</dd>
-        </div>
-        <div class="card-hover rounded-3xl p-6" style="background: var(--card);">
-          <dt class="text-xs uppercase tracking-[0.2em]" style="color: var(--faint);">{c.hostLabel}</dt>
-          <dd class="mt-2" style="color: var(--ink);">{c.hostValue}</dd>
-        </div>
-      </dl>
-      <div class="mt-10 grid gap-5 lg:grid-cols-3">
-        {
-          c.orgs.map((org) => (
-            <article class="card-hover rounded-3xl p-6" style="background: var(--card);">
-              <h3 class:list={["text-xl", titleClass]} style="color: var(--ink);">{org.title}</h3>
-              <p class="mt-3 text-sm leading-relaxed" style="color: var(--muted);">{org.body}</p>
-              <a
-                class="mt-4 inline-block text-sm underline-offset-4 hover:underline"
-                href={org.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                style="color: var(--accent-cyan);"
-              >
-                {org.href.replace("https://", "")}
-              </a>
-            </article>
-          ))
-        }
-      </div>
     </section>
 
     <section id="topics" class="mx-auto max-w-6xl px-5 py-20">
@@ -142,18 +111,6 @@ const kickerClass = isZh ? "font-sans font-bold" : "font-semibold";
             </article>
           ))
         }
-      </div>
-    </section>
-
-    <section id="program" class="mx-auto max-w-6xl px-5 py-20">
-      <p class:list={["text-xs uppercase tracking-[0.32em]", kickerClass]} style="color: var(--accent-gold);">
-        {c.programKicker}
-      </p>
-      <h2 class:list={["mt-3 text-3xl sm:text-4xl", titleClass]} style="color: var(--ink);">{c.programTitle}</h2>
-      <div class="card-hover mt-10 rounded-3xl p-8 sm:p-12" style="background: var(--program-wash);">
-        <p class:list={["text-xs uppercase tracking-[0.22em]", kickerClass]} style="color: var(--accent-cyan);">{c.programDates}</p>
-        <p class:list={["mt-3 text-3xl", titleClass]} style="color: var(--accent-gold);">{c.programNote}</p>
-        <p class="mt-4 max-w-2xl" style="color: var(--muted);">{c.programDetail}</p>
       </div>
     </section>
 
@@ -191,6 +148,42 @@ const kickerClass = isZh ? "font-sans font-bold" : "font-semibold";
       </div>
     </section>
 
+    <section id="organizers" class="mx-auto max-w-6xl px-5 py-20">
+      <p class:list={["text-xs uppercase tracking-[0.32em]", kickerClass]} style="color: var(--accent-fuchsia);">
+        {c.organizersLabel}
+      </p>
+      <h2 class:list={["mt-3 text-3xl sm:text-4xl", titleClass]} style="color: var(--ink);">{c.organizersSectionTitle}</h2>
+      <dl class="mt-8 grid gap-4 sm:grid-cols-2">
+        <div class="card-hover rounded-3xl p-6" style="background: var(--card);">
+          <dt class="text-xs uppercase tracking-[0.2em]" style="color: var(--faint);">{c.organizersLabel}</dt>
+          <dd class="mt-2" style="color: var(--ink);">{c.organizersValue}</dd>
+        </div>
+        <div class="card-hover rounded-3xl p-6" style="background: var(--card);">
+          <dt class="text-xs uppercase tracking-[0.2em]" style="color: var(--faint);">{c.hostLabel}</dt>
+          <dd class="mt-2" style="color: var(--ink);">{c.hostValue}</dd>
+        </div>
+      </dl>
+      <div class="mt-10 grid gap-5 lg:grid-cols-3">
+        {
+          c.orgs.map((org) => (
+            <article class="card-hover rounded-3xl p-6" style="background: var(--card);">
+              <h3 class:list={["text-xl", titleClass]} style="color: var(--ink);">{org.title}</h3>
+              <p class="mt-3 text-sm leading-relaxed" style="color: var(--muted);">{org.body}</p>
+              <a
+                class="mt-4 inline-block text-sm underline-offset-4 hover:underline"
+                href={org.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                style="color: var(--accent-cyan);"
+              >
+                {org.href.replace("https://", "")}
+              </a>
+            </article>
+          ))
+        }
+      </div>
+    </section>
+
     <section id="leadership" class="mx-auto max-w-6xl px-5 py-20">
       <p class:list={["text-xs uppercase tracking-[0.32em]", kickerClass]} style="color: var(--accent-cyan);">
         {c.leadershipKicker}
@@ -203,7 +196,16 @@ const kickerClass = isZh ? "font-sans font-bold" : "font-semibold";
         {
           c.chairs.map((person) => (
             <article class="card-hover rounded-3xl p-6" style="background: var(--card);">
-              <h4 class:list={["text-xl", titleClass]} style="color: var(--ink);">{person.name}</h4>
+              <div class="speaker-photo-frame">
+                <img
+                  src={person.photo}
+                  alt={person.name}
+                  class="speaker-photo"
+                  width="144"
+                  height="216"
+                />
+              </div>
+              <h4 class:list={["mt-4 text-xl", titleClass]} style="color: var(--ink);">{person.name}</h4>
               <p class="mt-2 text-sm" style="color: var(--muted);">{person.role}</p>
             </article>
           ))
@@ -267,6 +269,18 @@ const kickerClass = isZh ? "font-sans font-bold" : "font-semibold";
         {c.mealsLabel}
       </h3>
       <p class="mt-3 max-w-3xl" style="color: var(--muted);">{c.mealsValue}</p>
+    </section>
+
+    <section id="program" class="mx-auto max-w-6xl px-5 py-20">
+      <p class:list={["text-xs uppercase tracking-[0.32em]", kickerClass]} style="color: var(--accent-gold);">
+        {c.programKicker}
+      </p>
+      <h2 class:list={["mt-3 text-3xl sm:text-4xl", titleClass]} style="color: var(--ink);">{c.programTitle}</h2>
+      <div class="card-hover mt-10 rounded-3xl p-8 sm:p-12" style="background: var(--program-wash);">
+        <p class:list={["text-xs uppercase tracking-[0.22em]", kickerClass]} style="color: var(--accent-cyan);">{c.programDates}</p>
+        <p class:list={["mt-3 text-3xl", titleClass]} style="color: var(--accent-gold);">{c.programNote}</p>
+        <p class="mt-4 max-w-2xl" style="color: var(--muted);">{c.programDetail}</p>
+      </div>
     </section>
 
     <section id="venue" class="mx-auto max-w-6xl px-5 py-20">

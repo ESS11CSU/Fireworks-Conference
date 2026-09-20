@@ -24,13 +24,14 @@ export const copy = {
     nav: [
       { href: "#about", label: "About" },
       { href: "#topics", label: "Topics" },
-      { href: "#program", label: "Program" },
       { href: "#speakers", label: "Speakers" },
+      { href: "#organizers", label: "Organizers" },
+      { href: "#leadership", label: "Leadership" },
       { href: "#submit", label: "Submit" },
-      { href: "#venue", label: "Venue" },
     ],
     heroEyebrow: "November 11–13, 2026 · Changsha, China",
-    heroTitle: "Causal Inference in the Age of AI",
+    heroTitle: "Firework Conference: Economic Science Society 1st Asia Meeting",
+    heroTheme: "Causal Inference in the Age of AI",
     heroLeadTitle: "Firework Conference: Economic Science Society 1st Asia Meeting",
     heroLeadOrganizers:
       "Organizers: Economic Science Society; Central South University",
@@ -51,6 +52,7 @@ export const copy = {
     aboutBody2:
       "This conference brings together scholars working on causal inference with observational data, experimental methods, AI-assisted causal inference, and applications in finance. It seeks to engage a major frontier in contemporary economics: the shift from documenting correlations toward identifying mechanisms and establishing causal explanations. It also promotes deeper integration of China-based research into the international academic community. The conference aims to contribute to more evidence-based economic and financial decision-making and to the development of an independent knowledge system for the social sciences in China.",
     organizersLabel: "Organizers",
+    organizersSectionTitle: "Organizers and host",
     organizersValue: "Economic Science Society; Central South University",
     hostLabel: "Host",
     hostValue: "Business School, Central South University",
@@ -126,14 +128,17 @@ export const copy = {
       {
         name: "Daniel Houser",
         role: "George Mason University, Department of Economics",
+        photo: withBase("speakers/houser.jpg"),
       },
       {
         name: "Zongrun Wang",
         role: "Business School, Central South University",
+        photo: withBase("speakers/wang.jpg"),
       },
       {
         name: "Yulei Rao",
         role: "Business School, Central South University",
+        photo: withBase("speakers/rao.jpg"),
       },
     ],
     committeeLabel: "Organizing Committee",
@@ -233,13 +238,14 @@ export const copy = {
     nav: [
       { href: "#about", label: "关于" },
       { href: "#topics", label: "议题" },
-      { href: "#program", label: "日程" },
       { href: "#speakers", label: "演讲人" },
+      { href: "#organizers", label: "主办" },
+      { href: "#leadership", label: "组织" },
       { href: "#submit", label: "投稿" },
-      { href: "#venue", label: "会场" },
     ],
     heroEyebrow: "2026年11月11\u201113日 · 中国长沙",
-    heroTitle: "人工智能时代的因果推断",
+    heroTitle: "烟花会议：经济科学学会第一届亚洲会议",
+    heroTheme: "人工智能时代的因果推断",
     heroLeadTitle: "烟花会议：经济科学学会第一届亚洲会议",
     heroLeadOrganizers: "主办单位：经济科学学会；中南大学",
     heroLeadHost: "承办单位：中南大学商学院",
@@ -259,6 +265,7 @@ export const copy = {
     aboutBody2:
       "本次会议汇聚从事观测数据因果推断、实验方法、人工智能辅助因果推断以及金融应用的学者。会议面向当代经济学的重要前沿：从记录相关关系转向识别机制并建立因果解释；同时推动中国研究更深入地融入国际学术共同体。会议旨在促进更循证的经济与金融决策，并助力中国社会科学自主知识体系的发展。",
     organizersLabel: "主办单位",
+    organizersSectionTitle: "主办与承办",
     organizersValue: "经济科学学会；中南大学",
     hostLabel: "承办单位",
     hostValue: "中南大学商学院",
@@ -333,14 +340,17 @@ export const copy = {
       {
         name: "Daniel Houser",
         role: "George Mason University, Department of Economics",
+        photo: withBase("speakers/houser.jpg"),
       },
       {
         name: "Zongrun Wang",
         role: "中南大学商学院",
+        photo: withBase("speakers/wang.jpg"),
       },
       {
         name: "Yulei Rao",
         role: "中南大学商学院",
+        photo: withBase("speakers/rao.jpg"),
       },
     ],
     committeeLabel: "组织委员会",
