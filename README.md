@@ -18,7 +18,7 @@ Then open the URL Astro prints. Because `base` is `/Fireworks-Conference/`, loca
 - English: `/Fireworks-Conference/`
 - 中文: `/Fireworks-Conference/zh/`
 
-The first visit in a browser session opens a colorful fireworks splash, centered in the viewport. It dismisses automatically after about 2.3 seconds, or immediately via **Enter the meeting** / **进入会议** or **Skip**. Later views in the same session skip the splash (`sessionStorage`).
+The first visit in a browser session opens a colorful fireworks splash, centered in the viewport. It dismisses automatically after about 4.6 seconds, or immediately via **Enter the meeting** / **进入会议** or **Skip**. Later views in the same session skip the splash (`sessionStorage`).
 
 Use the header **Light / Dark** (亮色 / 暗色) control to switch themes. The choice is stored in `localStorage` (`firework-ess-theme`). First-time visitors get **light** (浅色) unless they have already saved a preference.
 
@@ -45,7 +45,7 @@ The finished Phase-1 site was originally developed on Cursor Origin. This GitHub
 
 ## Image credits
 
-- About illustration: `public/images/about-academic.jpg` — [Headway](https://unsplash.com/@headwayio) on [Unsplash](https://unsplash.com/photos/n31H3zWClN4) (Unsplash License). Decorative lecture-hall photo only; it is not a photo of this meeting.
+- About illustration: `public/images/about-banner.jpg` — organizer-provided conference artwork (fireworks / AI / cityscape). Not an Unsplash photo and not a photograph of the 2026 meeting.
 - Speaker portraits (1:1 official academic headshots, slight shared desaturation; see also `public/speakers/SOURCES.md`):
   - James Heckman — University of Chicago Department of Economics faculty page https://economics.uchicago.edu/directory/james-j-heckman (`james_heckman_headshot.png`)
   - Daniel Houser — George Mason University Department of Economics faculty page https://economics.gmu.edu/people/dhouser (`DanHouser.jpg`)

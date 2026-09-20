@@ -21,6 +21,8 @@ export const copy = {
     themeToDark: "Dark",
     brand: "Firework",
     brandSuffix: "ESS Asia Meeting",
+    heroTitleLead: "Firework Conference:",
+    heroTitleRest: "Economic Science Society 1st Asia Meeting",
     nav: [
       { href: "#about", label: "About" },
       { href: "#topics", label: "Topics" },
@@ -43,8 +45,8 @@ export const copy = {
       { label: "Venue", value: "Changsha, China" },
       { label: "Deadline", value: "23 Oct 2026 AoE" },
     ],
-    aboutImageAlt: "Lecture hall with an audience seated at tables",
-    aboutImageCredit: "Photo: Headway / Unsplash",
+    aboutImageAlt: "Conference artwork with fireworks, a globe, and a city skyline",
+    aboutImageCredit: "Organizer-provided artwork",
     aboutKicker: "About the meeting",
     aboutTitle: "Causal Inference in the Age of AI",
     aboutBody:
@@ -127,16 +129,20 @@ export const copy = {
     chairs: [
       {
         name: "Daniel Houser",
+        title:
+          "Founding President, Economic Science Society; Chair, Department of Economics, George Mason University",
         role: "George Mason University, Department of Economics",
         photo: withBase("speakers/houser.jpg"),
       },
       {
         name: "Zongrun Wang",
+        title: "Dean, Business School, Central South University",
         role: "Business School, Central South University",
         photo: withBase("speakers/wang.jpg"),
       },
       {
         name: "Yulei Rao",
+        title: "Director, Financial Innovation Research Center, Central South University",
         role: "Business School, Central South University",
         photo: withBase("speakers/rao.jpg"),
       },
@@ -234,7 +240,9 @@ export const copy = {
     themeToLight: "亮色",
     themeToDark: "暗色",
     brand: "烟花会议",
-    brandSuffix: "ESS 亚洲会议",
+    brandSuffix: "经济科学学会亚洲会议",
+    heroTitleLead: "烟花会议：",
+    heroTitleRest: "经济科学学会第一届亚洲会议",
     nav: [
       { href: "#about", label: "关于" },
       { href: "#topics", label: "议题" },
@@ -256,8 +264,8 @@ export const copy = {
       { label: "地点", value: "中国长沙" },
       { label: "截稿", value: "2026年10月23日 AoE" },
     ],
-    aboutImageAlt: "报告厅内听众就座",
-    aboutImageCredit: "图片：Headway / Unsplash",
+    aboutImageAlt: "烟花、地球与城市天际线会议海报",
+    aboutImageCredit: "主办方提供的会议海报",
     aboutKicker: "关于会议",
     aboutTitle: "人工智能时代的因果推断",
     aboutBody:
@@ -314,21 +322,21 @@ export const copy = {
       {
         badge: "邀请演讲",
         name: "Daniel Houser",
-        role: "George Mason University, Department of Economics",
+        role: "乔治梅森大学经济系",
         photo: withBase("speakers/houser.jpg"),
         bio: "Daniel Houser 教授是经济科学学会创始会长。他是乔治梅森大学经济系主任、乔治梅森大学跨学科经济科学中心主任。他与实验经济学先驱、2002年诺贝尔经济学奖获得者 Vernon Smith 密切合作。主要研究领域包括实验经济学、行为经济学与神经经济学。",
       },
       {
         badge: "邀请演讲",
         name: "Jie Zheng",
-        role: "The Center for Economic Research, Shandong University",
+        role: "山东大学经济研究中心",
         photo: withBase("speakers/zheng.jpg"),
         bio: "Jie Zheng 为山东大学经济研究中心教授、山东大学特聘教授，以及经济理论与实验研究中心（CREATE）主任。他于华盛顿大学获得经济学博士学位。研究兴趣包括信息经济学、实验经济学、行为经济学与产业组织。",
       },
       {
         badge: "邀请演讲",
         name: "Te Bao",
-        role: "Nanyang Technological University, Singapore",
+        role: "新加坡南洋理工大学",
         photo: withBase("speakers/bao.jpg"),
         bio: "Te Bao 为新加坡南洋理工大学社会科学学院经济学副教授。他于2012年在阿姆斯特丹大学获得经济学博士学位。研究兴趣包括实验经济学、行为金融、合同理论与房地产经济学。",
       },
@@ -339,16 +347,19 @@ export const copy = {
     chairs: [
       {
         name: "Daniel Houser",
-        role: "George Mason University, Department of Economics",
+        title: "经济科学学会（ESS）创始主席；乔治梅森大学经济系系主任",
+        role: "乔治梅森大学经济系",
         photo: withBase("speakers/houser.jpg"),
       },
       {
-        name: "Zongrun Wang",
+        name: "王宗润",
+        title: "中南大学商学院院长",
         role: "中南大学商学院",
         photo: withBase("speakers/wang.jpg"),
       },
       {
-        name: "Yulei Rao",
+        name: "饶育蕾",
+        title: "中南大学金融创新研究中心主任",
         role: "中南大学商学院",
         photo: withBase("speakers/rao.jpg"),
       },
@@ -356,20 +367,20 @@ export const copy = {
     committeeLabel: "组织委员会",
     committee: [
       {
-        name: "Ping Wei",
+        name: "危平",
         role: "中南大学商学院",
       },
       {
-        name: "Jianxin Wang",
+        name: "王建新",
         role: "中南大学商学院",
       },
       {
         name: "Jie Zheng",
-        role: "The Center for Economic Research, Shandong University",
+        role: "山东大学经济研究中心",
       },
       {
         name: "Zijun Luo",
-        role: "University of Nebraska at Omaha, Department of Economics",
+        role: "内布拉斯加大学奥马哈分校经济系",
       },
     ],
     submitKicker: "投稿与注册",
@@ -383,7 +394,7 @@ export const copy = {
     reviewNote:
       "所有投稿将由专家审稿。入选论文作者将获邀在会议上报告其研究。",
     deadlineLabel: "投稿截止日期",
-    deadlineValue: "2026年10月23日，Anywhere on Earth（AoE）",
+    deadlineValue: "2026年10月23日（AoE，全球任意时区）",
     acceptanceLabel: "录用通知",
     acceptanceValue: "2026年10月31日前",
     feesLabel: "注册费",
