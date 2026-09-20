@@ -9,7 +9,17 @@ interface Props {
 
 const { lang } = Astro.props;
 const c = t(lang);
-const accents = ["from-fuchsia-500", "from-cyan-400", "from-amber-300", "from-lime-300"];
+const accents = [
+  "from-fuchsia-500",
+  "from-cyan-400",
+  "from-amber-300",
+  "from-lime-300",
+  "from-rose-400",
+  "from-sky-400",
+  "from-violet-400",
+  "from-orange-300",
+  "from-teal-300",
+];
 const isZh = lang === "zh";
 const titleClass = isZh ? "font-sans font-bold" : "font-display";
 const kickerClass = isZh ? "font-sans font-bold" : "font-semibold";
@@ -138,7 +148,11 @@ const kickerClass = isZh ? "font-sans font-bold" : "font-semibold";
                   </p>
                   <h3 class:list={["mt-2 text-2xl sm:text-3xl", titleClass]} style="color: var(--ink);">{speaker.name}</h3>
                   <p class="mt-1 text-sm sm:text-base" style="color: var(--accent-cyan);">{speaker.role}</p>
-                  <p class="mt-4 text-sm leading-relaxed sm:text-base" style="color: var(--muted);">{speaker.bio}</p>
+                  {speaker.bio.split("\n\n").map((para) => (
+                    <p class="mt-3 text-sm leading-relaxed first:mt-4 sm:text-base" style="color: var(--muted);">
+                      {para}
+                    </p>
+                  ))}
                 </div>
               </div>
             </article>
@@ -231,7 +245,11 @@ const kickerClass = isZh ? "font-sans font-bold" : "font-semibold";
         {c.submitKicker}
       </p>
       <h2 class:list={["mt-3 text-3xl sm:text-4xl", titleClass]} style="color: var(--ink);">{c.submitTitle}</h2>
-      <p class="mt-5 max-w-3xl" style="color: var(--muted);">{c.submitInvite}</p>
+      <h3 class:list={["mt-10 text-sm uppercase tracking-[0.2em]", kickerClass]} style="color: var(--accent-gold);">
+        {c.submitPaperTitle}
+      </h3>
+      <p class="mt-4 max-w-3xl" style="color: var(--muted);">{c.submitLangNote}</p>
+      <p class="mt-3 max-w-3xl" style="color: var(--muted);">{c.submitInvite}</p>
       <ul class="mt-4 list-disc space-y-1 pl-5" style="color: var(--ink);">
         {c.submitMaterials.map((item) => <li>{item}</li>)}
       </ul>
@@ -241,7 +259,22 @@ const kickerClass = isZh ? "font-sans font-bold" : "font-semibold";
       <a class="text-lg underline-offset-4 hover:underline" href={`mailto:${c.submitEmail}`} style="color: var(--accent-cyan);">
         {c.submitEmail}
       </a>
-      <p class="mt-6 max-w-3xl" style="color: var(--muted);">{c.reviewNote}</p>
+      <h3 class:list={["mt-12 text-sm uppercase tracking-[0.2em]", kickerClass]} style="color: var(--accent-gold);">
+        {c.submitSessionTitle}
+      </h3>
+      <p class="mt-4 max-w-3xl" style="color: var(--muted);">{c.submitSessionLead}</p>
+      <p class="mt-3 max-w-3xl" style="color: var(--muted);">{c.submitLangNote}</p>
+      <p class="mt-3 max-w-3xl" style="color: var(--muted);">{c.submitSessionInvite}</p>
+      <ul class="mt-4 list-disc space-y-1 pl-5" style="color: var(--ink);">
+        {c.submitSessionMaterials.map((item) => <li>{item}</li>)}
+      </ul>
+      <p class="mt-6 max-w-3xl" style="color: var(--muted);">{c.submitSessionHow}</p>
+      <p class="mt-3 font-mono text-sm" style="color: var(--accent-gold);">{c.submitSessionSubject}</p>
+      <p class="mt-6 text-xs uppercase tracking-[0.2em]" style="color: var(--faint);">{c.submitEmailLabel}</p>
+      <a class="text-lg underline-offset-4 hover:underline" href={`mailto:${c.submitEmail}`} style="color: var(--accent-cyan);">
+        {c.submitEmail}
+      </a>
+      <p class="mt-8 max-w-3xl" style="color: var(--muted);">{c.reviewNote}</p>
       <dl class="mt-8 grid gap-5 sm:grid-cols-2">
         <div class="card-hover rounded-3xl p-6" style="background: var(--card);">
           <dt class="text-xs uppercase tracking-[0.2em]" style="color: var(--faint);">{c.deadlineLabel}</dt>

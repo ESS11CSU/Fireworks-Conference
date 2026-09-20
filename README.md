@@ -46,8 +46,10 @@ The finished Phase-1 site was originally developed on Cursor Origin. This GitHub
 ## Image credits
 
 - About illustration: `public/images/about-banner.jpg` — organizer-provided conference artwork (fireworks / AI / cityscape). Not an Unsplash photo and not a photograph of the 2026 meeting.
-- Speaker portraits (1:1 official academic headshots, slight shared desaturation; see also `public/speakers/SOURCES.md`):
+- Speaker portraits (official academic headshots in a shared 2:3 frame; see also `public/speakers/SOURCES.md`):
   - James Heckman — University of Chicago Department of Economics faculty page https://economics.uchicago.edu/directory/james-j-heckman (`james_heckman_headshot.png`)
   - Daniel Houser — George Mason University Department of Economics faculty page https://economics.gmu.edu/people/dhouser (`DanHouser.jpg`)
   - Jie Zheng — Shandong University faculty homepage https://faculty.sdu.edu.cn/zhengjie/ (faculty portrait). Same likeness as his academic page https://meetecon.com/jie
   - Te Bao — NTU Graduate College Deanery https://www.ntu.edu.sg/graduate-college/about-gc/deanery (`prof-bao.jpg`, listed beside BAO Te)
+  - Xiangdong Qin — ACEM / Shanghai Jiao Tong University faculty page https://www.acem.sjtu.edu.cn/faculty/qingxiangdong.html (`/faculty/images/131_PHOTO.GIF`)
+  - Erte Xiao — Monash University research portal https://research.monash.edu/en/persons/erte-xiao/ (`picture_1.png`)

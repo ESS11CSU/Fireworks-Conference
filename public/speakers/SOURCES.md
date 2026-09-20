@@ -1,6 +1,6 @@
 # Speaker portrait sources
 
-All four images were downloaded from official academic / university pages.
+Images were downloaded from official academic / university pages.
 Cards display them in a shared 2:3 ID-photo frame (`object-cover`). Houser’s file is stored as 2:3 so the official GMU portrait is not zoomed into a tight 1:1 crop.
 
 | Person | Source page | Image URL |
@@ -9,6 +9,8 @@ Cards display them in a shared 2:3 ID-photo frame (`object-cover`). Houser’s f
 | Daniel Houser | George Mason University Department of Economics faculty profile | https://economics.gmu.edu/people/dhouser — official original `https://d101vc9winf8ln.cloudfront.net/person_images/205/original/DanHouser.jpg` (same file as the faculty `cropped` thumbnail). The earlier site file was a tight 1:1 zoom that clipped his face in a 2:3 frame; this version keeps the official portrait’s side room and is stored as 2:3. |
 | Jie Zheng | Shandong University faculty homepage | https://faculty.sdu.edu.cn/zhengjie/ — faculty portrait (`/_resource/fileshow/eIBjYjy6FZVv`). Same likeness as his academic page https://meetecon.com/jie |
 | Te Bao | NTU Graduate College Deanery (official NTU page listing BAO Te) | https://www.ntu.edu.sg/graduate-college/about-gc/deanery — `prof-bao.jpg` |
+| Xiangdong Qin | Antai College of Economics and Management, Shanghai Jiao Tong University faculty profile | https://www.acem.sjtu.edu.cn/faculty/qingxiangdong.html — official faculty photo `/faculty/images/131_PHOTO.GIF` (served as a small JPEG). English profile: https://acem.sjtu.edu.cn/en/faculty/qingxiangdong.html |
+| Erte Xiao | Monash University research portal faculty profile | https://research.monash.edu/en/persons/erte-xiao/ — official portrait `https://research.monash.edu/files-asset/251782492/picture_1.png` |
 
 ## Conference Co-Chair portraits
 
