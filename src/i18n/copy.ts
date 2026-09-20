@@ -149,6 +149,10 @@ export const copy = {
         posts: [
           { role: "Founding President", org: "Economic Science Society" },
           { role: "Chair", org: "Department of Economics, George Mason University" },
+          {
+            role: "Director",
+            org: "Interdisciplinary Center for Economic Science, George Mason University",
+          },
         ],
       },
       {
@@ -416,6 +420,10 @@ export const copy = {
         posts: [
           { role: "创始主席", org: "经济科学学会" },
           { role: "系主任", org: "乔治梅森大学经济系" },
+          {
+            role: "主任",
+            org: "乔治梅森大学跨学科经济科学中心（Interdisciplinary Center for Economic Science）",
+          },
         ],
       },
       {
