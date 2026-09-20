@@ -262,7 +262,7 @@ export const copy = {
     facts: [
       { label: "日期", value: "2026年11月11\u201113日" },
       { label: "地点", value: "中国长沙" },
-      { label: "截稿", value: "2026年10月23日 AoE" },
+      { label: "截稿", value: "2026年10月23日（全球任意时区）" },
     ],
     aboutImageAlt: "烟花、地球与城市天际线会议海报",
     aboutImageCredit: "主办方提供的会议海报",
@@ -286,12 +286,12 @@ export const copy = {
       {
         title: "中南大学",
         href: "https://www.csu.edu.cn/",
-        body: "中南大学位于中国历史文化名城湖南省长沙市。中南大学是中央直管高校之一、国家“985工程”重点建设高校、首批“211工程”高校、首批“2011计划”高校。2017年入选世界一流大学建设高校（A类），2022年入选第二轮国家“双一流”建设。中南大学已连续三年进入软科世界大学学术排名（ARWU）世界百强。2025年，在 U.S. News 2025–2026 世界大学排行中位列中国第13、全球第146。",
+        body: "中南大学位于中国历史文化名城湖南省长沙市。中南大学是中央直管高校之一、国家“985工程”重点建设高校、首批“211工程”高校、首批“2011计划”高校。2017年入选世界一流大学建设高校（A类），2022年入选第二轮国家“双一流”建设。中南大学已连续三年进入软科世界大学学术排名世界百强。2025年，在《美国新闻与世界报道》2025–2026世界大学排行中位列中国第13、全球第146。",
       },
       {
         title: "中南大学商学院",
         href: "https://bs.csu.edu.cn/",
-        body: "中南大学商学院是中国经济学与管理学领域的领先学院之一。学科覆盖管理学与经济学，包括管理科学与工程、工商管理、应用经济学三个一级学科。管理科学与工程为国家重点学科，在第五轮学科评估中获评A类。中南大学经济与商学学科进入ESI全球前1%。学院已获得AACSB与AMBA国际认证。",
+        body: "中南大学商学院是中国经济学与管理学领域的领先学院之一。学科覆盖管理学与经济学，包括管理科学与工程、工商管理、应用经济学三个一级学科。管理科学与工程为国家重点学科，在第五轮学科评估中获评A类。中南大学经济与商学学科进入基本科学指标数据库全球前1%。学院已获得国际商学院协会认证与工商管理硕士协会认证。",
       },
     ],
     topicsKicker: "征稿",
@@ -317,7 +317,7 @@ export const copy = {
         name: "James Heckman",
         role: "芝加哥大学",
         photo: withBase("speakers/heckman.jpg"),
-        bio: "James J. Heckman 是国际著名经济学家、2000年诺贝尔经济学奖获得者。他现为芝加哥大学 Henry Schultz Distinguished Service Professor of Economics，并担任人类发展经济学中心（Center for the Economics of Human Development）主任。他在芝加哥大学的学术生涯中，曾任职于经济系、哈里斯公共政策学院与法学院。Heckman 教授被广泛认为是微观计量经济学、劳动经济学、人力资本理论与政策评估领域最具影响力的学者之一。他因在选择性样本分析的理论与方法上的开创性贡献而获得诺贝尔经济学奖。",
+        bio: "James J. Heckman 是国际著名经济学家、2000年诺贝尔经济学奖获得者。他现为芝加哥大学亨利·舒尔茨经济学杰出贡献教授，并担任人类发展经济学中心主任。他在芝加哥大学的学术生涯中，曾任职于经济系、哈里斯公共政策学院与法学院。Heckman 教授被广泛认为是微观计量经济学、劳动经济学、人力资本理论与政策评估领域最具影响力的学者之一。他因在选择性样本分析的理论与方法上的开创性贡献而获得诺贝尔经济学奖。",
       },
       {
         badge: "邀请演讲",
@@ -331,7 +331,7 @@ export const copy = {
         name: "Jie Zheng",
         role: "山东大学经济研究中心",
         photo: withBase("speakers/zheng.jpg"),
-        bio: "Jie Zheng 为山东大学经济研究中心教授、山东大学特聘教授，以及经济理论与实验研究中心（CREATE）主任。他于华盛顿大学获得经济学博士学位。研究兴趣包括信息经济学、实验经济学、行为经济学与产业组织。",
+        bio: "Jie Zheng 为山东大学经济研究中心教授、山东大学特聘教授，以及经济理论与实验研究中心主任。他于华盛顿大学获得经济学博士学位。研究兴趣包括信息经济学、实验经济学、行为经济学与产业组织。",
       },
       {
         badge: "邀请演讲",
@@ -388,13 +388,13 @@ export const copy = {
     submitInvite: "请作者提交以下材料，中文或英文均可：",
     submitMaterials: ["论文题目", "摘要", "作者姓名", "单位"],
     submitHow: "请将投稿材料发送至会议指定邮箱。邮件主题格式为：",
-    submitSubject: "ESS Submission + Author Name + Affiliation",
+    submitSubject: "ESS Submission + 作者姓名 + 单位",
     submitEmailLabel: "投稿邮箱",
     submitEmail: "tobeannounced@csu.edu.cn",
     reviewNote:
       "所有投稿将由专家审稿。入选论文作者将获邀在会议上报告其研究。",
     deadlineLabel: "投稿截止日期",
-    deadlineValue: "2026年10月23日（AoE，全球任意时区）",
+    deadlineValue: "2026年10月23日（全球任意时区）",
     acceptanceLabel: "录用通知",
     acceptanceValue: "2026年10月31日前",
     feesLabel: "注册费",
@@ -418,12 +418,12 @@ export const copy = {
     contactTitle: "会议联系人",
     contacts: [
       {
-        name: "王卓玲 Zhuolin Wang",
+        name: "王卓玲",
         role: "交通与会场信息",
         phone: "+86-13007449609",
       },
       {
-        name: "王建新 Jianxin Wang",
+        name: "王建新",
         role: "论文投稿与录用",
         phone: "+86-13873165114",
       },

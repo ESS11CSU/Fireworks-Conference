@@ -73,21 +73,19 @@ const kickerClass = isZh ? "font-sans font-bold" : "font-semibold";
       <h2 class:list={["mt-3 max-w-3xl text-3xl sm:text-4xl", titleClass]} style="color: var(--ink);">
         {c.aboutTitle}
       </h2>
-      <div class="mt-8 grid items-center gap-8 lg:grid-cols-2 lg:gap-12">
-        <div style="color: var(--muted);">
+      <div class="mt-8 grid items-stretch gap-6 lg:grid-cols-2 lg:gap-8">
+        <div class="flex flex-col justify-center" style="color: var(--muted);">
           <p>{c.aboutBody}</p>
           <p class="mt-4">{c.aboutBody2}</p>
         </div>
-        <figure class="card-hover overflow-hidden rounded-3xl">
-          <!-- Decorative academic stock photo only; no conference-specific claims. -->
+        <figure class="card-hover min-h-[18rem] overflow-hidden rounded-3xl lg:min-h-full">
           <img
             src={`${import.meta.env.BASE_URL}images/about-banner.jpg`}
             alt={c.aboutImageAlt}
-            class="h-full max-h-[28rem] w-full object-cover"
+            class="h-full w-full object-cover"
             width="1672"
             height="941"
           />
-          <figcaption class="px-4 py-2 text-xs" style="color: var(--faint);">{c.aboutImageCredit}</figcaption>
         </figure>
       </div>
     </section>
