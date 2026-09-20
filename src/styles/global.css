@@ -103,6 +103,7 @@ body {
   width: 100%;
   grid-template-columns: minmax(0, 1fr);
   gap: 1.25rem;
+  align-items: stretch;
   justify-items: stretch;
 }
 
@@ -116,7 +117,12 @@ body {
   width: 100%;
   min-width: 0;
   max-width: 100%;
+  height: 100%;
   justify-self: stretch;
+}
+
+.topic-title {
+  min-height: 2.8em;
 }
 
 .card-hover {
