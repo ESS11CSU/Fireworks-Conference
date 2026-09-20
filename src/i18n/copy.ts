@@ -168,7 +168,7 @@ export const copy = {
         posts: [
           {
             role: "Director",
-            org: "Financial Innovation Research Center, Business School, Central South University",
+            org: "Financial Innovation Research Center, Central South University",
           },
         ],
       },
@@ -437,7 +437,7 @@ export const copy = {
         posts: [
           {
             role: "主任",
-            org: "中南大学金融创新研究中心，中南大学商学院",
+            org: "中南大学金融创新研究中心",
           },
         ],
       },
