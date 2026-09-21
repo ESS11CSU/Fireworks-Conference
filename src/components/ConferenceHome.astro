@@ -40,7 +40,7 @@ const kickerClass = isZh ? "font-sans font-bold" : "font-semibold";
           "mt-5 leading-[1.15]",
           isZh
             ? "max-w-5xl text-4xl sm:text-6xl lg:text-7xl"
-            : "w-[90rem] max-w-[calc(100vw-2.5rem)] text-3xl sm:text-5xl lg:text-5xl 2xl:text-6xl",
+            : "w-[90rem] max-w-[calc(100vw-2.5rem)] text-3xl sm:text-5xl lg:text-5xl",
           titleClass,
         ]}
         style="color: var(--ink);"
@@ -352,7 +352,15 @@ const kickerClass = isZh ? "font-sans font-bold" : "font-semibold";
         <h3 class:list={["mt-10 text-sm uppercase tracking-[0.2em]", kickerClass]} style="color: var(--accent-gold);">
           {c.contactTitle}
         </h3>
-        <div class="mt-4 grid gap-5 sm:grid-cols-2">
+        <p class="mt-4 text-xs uppercase tracking-[0.2em]" style="color: var(--faint);">{c.contactEmailLabel}</p>
+        <a
+          class="mt-1 inline-block text-lg underline-offset-4 hover:underline"
+          href={`mailto:${c.contactEmail}`}
+          style="color: var(--accent-cyan);"
+        >
+          {c.contactEmail}
+        </a>
+        <div class="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {
             c.contacts.map((person) => (
               <div>

@@ -1,6 +1,6 @@
-# Firework Conference: Economic Science Society 1st Asia Meeting
+# Fireworks Conference: Economic Science Society Inaugural Asia Meeting
 
-Phase-1 conference website for the Firework Conference: Economic Science Society 1st Asia Meeting (theme: Causal Inference in the Age of AI).
+Phase-1 conference website for the Fireworks Conference: Economic Science Society Inaugural Asia Meeting (theme: Causal Inference in the Age of AI).
 
 **Stack:** Astro + Tailwind CSS  
 **Languages:** English and 中文  
@@ -51,5 +51,8 @@ The finished Phase-1 site was originally developed on Cursor Origin. This GitHub
   - Daniel Houser — George Mason University Department of Economics faculty page https://economics.gmu.edu/people/dhouser (`DanHouser.jpg`)
   - Jie Zheng — Shandong University faculty homepage https://faculty.sdu.edu.cn/zhengjie/ (faculty portrait). Same likeness as his academic page https://meetecon.com/jie
   - Te Bao — NTU Graduate College Deanery https://www.ntu.edu.sg/graduate-college/about-gc/deanery (`prof-bao.jpg`, listed beside BAO Te)
+  - Soo Hong Chew — National University of Singapore Discovery profile https://discovery.nus.edu.sg/2217 (official profile thumbnail)
+  - Juanjuan Meng — Peking University Guanghua School of Management faculty profile https://www.gsm.pku.edu.cn/faculty/jumeng/ (`0382_PHOTO.JPG`)
   - Xiangdong Qin — ACEM / Shanghai Jiao Tong University faculty page https://www.acem.sjtu.edu.cn/faculty/qingxiangdong.html (`/faculty/images/131_PHOTO.GIF`)
   - Erte Xiao — Monash University research portal https://research.monash.edu/en/persons/erte-xiao/ (`picture_1.png`)
+  - Songfa Zhong — HKUST Department of Economics faculty profile https://econ.hkust.edu.hk/faculty-and-staff/directory/szhong (`songfa.jpg`)
