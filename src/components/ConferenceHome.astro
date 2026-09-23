@@ -132,14 +132,14 @@ const kickerClass = isZh ? "font-sans font-bold" : "font-semibold";
       </div>
     </section>
 
-    <section id="co-chairs" class="mx-auto max-w-6xl px-5 py-20">
+    <section id="co-chairs" class="mx-auto max-w-7xl px-5 py-20">
       <p class:list={["text-xs uppercase tracking-[0.32em]", kickerClass]} style="color: var(--accent-cyan);">
         {c.chairsLabel}
       </p>
-      <div class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      <div class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
         {
           c.chairs.map((person) => (
-            <article class="card-hover rounded-3xl p-6" style="background: var(--card);">
+            <article class="card-hover rounded-3xl p-5" style="background: var(--card);">
               <div class="speaker-photo-frame">
                 <img
                   src={person.photo}

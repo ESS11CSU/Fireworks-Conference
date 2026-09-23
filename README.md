@@ -1,6 +1,6 @@
-# Inaugural Asia Meeting of the Economic Science Society
+# Fireworks Conference: Economic Science Society Inaugural Asia Meeting
 
-Conference website for the Inaugural Asia Meeting of the Economic Science Society (theme: Causal Inference in the Age of AI).
+Conference website for the Fireworks Conference: Economic Science Society Inaugural Asia Meeting (theme: Causal Inference in the Age of AI).
 
 **Stack:** Astro + Tailwind CSS  
 **Languages:** English and 中文  
