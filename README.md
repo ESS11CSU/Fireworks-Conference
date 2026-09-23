@@ -1,6 +1,6 @@
-# Fireworks Conference: Economic Science Society Inaugural Asia Meeting
+# Inaugural Asia Meeting of the Economic Science Society
 
-Phase-1 conference website for the Fireworks Conference: Economic Science Society Inaugural Asia Meeting (theme: Causal Inference in the Age of AI).
+Conference website for the Inaugural Asia Meeting of the Economic Science Society (theme: Causal Inference in the Age of AI).
 
 **Stack:** Astro + Tailwind CSS  
 **Languages:** English and 中文  
@@ -46,7 +46,7 @@ The finished Phase-1 site was originally developed on Cursor Origin. This GitHub
 ## Image credits
 
 - About illustration: `public/images/about-banner.jpg` — organizer-provided conference artwork (fireworks / AI / cityscape). Not an Unsplash photo and not a photograph of the 2026 meeting.
-- Speaker portraits (official academic headshots in a shared 2:3 frame; see also `public/speakers/SOURCES.md`):
+- Speaker and co-chair portraits (official academic headshots in a shared 2:3 frame; see also `public/speakers/SOURCES.md`):
   - James Heckman — University of Chicago Department of Economics faculty page https://economics.uchicago.edu/directory/james-j-heckman (`james_heckman_headshot.png`)
   - Daniel Houser — George Mason University Department of Economics faculty page https://economics.gmu.edu/people/dhouser (`DanHouser.jpg`)
   - Jie Zheng — Shandong University faculty homepage https://faculty.sdu.edu.cn/zhengjie/ (faculty portrait). Same likeness as his academic page https://meetecon.com/jie
@@ -56,3 +56,4 @@ The finished Phase-1 site was originally developed on Cursor Origin. This GitHub
   - Xiangdong Qin — ACEM / Shanghai Jiao Tong University faculty page https://www.acem.sjtu.edu.cn/faculty/qingxiangdong.html (`/faculty/images/131_PHOTO.GIF`)
   - Erte Xiao — Monash University research portal https://research.monash.edu/en/persons/erte-xiao/ (`picture_1.png`)
   - Songfa Zhong — HKUST Department of Economics faculty profile https://econ.hkust.edu.hk/faculty-and-staff/directory/szhong (`songfa.jpg`)
+  - Yongmei Liu — Central South University Business School faculty profile https://bs.csu.edu.cn/info/1863/23741.htm (official faculty portrait)

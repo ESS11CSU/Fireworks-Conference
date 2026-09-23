@@ -22,3 +22,4 @@ Cards display them in a shared 2:3 ID-photo frame (`object-cover`). Houser’s f
 | Daniel Houser | Same GMU faculty original as the speaker card | `speakers/houser.jpg` (reused) |
 | Zongrun Wang / 王宗润 | CSU Business School faculty profile | https://bs.csu.edu.cn/info/1791/23617.htm — `/__local/4/A7/B2/48C8FADFFD2BA5F1AAA408FE693_564EBE10_AD59.jpg` |
 | Yulei Rao / 饶育蕾 | CSU Business School faculty profile | https://bs.csu.edu.cn/info/1919/26562.htm — `/__local/0/CE/AF/4185FC36C171C2BC5497DDCF003_FD8B4A50_1D57A.jpg` |
+| Yongmei Liu / 刘咏梅 | CSU Business School faculty profile | https://bs.csu.edu.cn/info/1863/23741.htm — `/__local/8/65/AA/1E3036E93052BE51AF108546F05_0B4CE2D6_3D6E6.jpg` |
