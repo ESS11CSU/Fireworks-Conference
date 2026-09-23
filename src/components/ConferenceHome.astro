@@ -40,13 +40,12 @@ const kickerClass = isZh ? "font-sans font-bold" : "font-semibold";
           "mt-5 leading-[1.15]",
           isZh
             ? "max-w-5xl text-4xl sm:text-6xl lg:text-7xl"
-            : "w-[90rem] max-w-[calc(100vw-2.5rem)] text-3xl sm:text-5xl lg:text-5xl",
+            : "w-[90rem] max-w-[calc(100vw-2.5rem)] text-[clamp(2rem,3.2vw,3rem)] lg:whitespace-nowrap",
           titleClass,
         ]}
         style="color: var(--ink);"
       >
-        <span class="block">{c.heroTitleLead}</span>
-        <span class:list={["block", !isZh && "xl:whitespace-nowrap"]}>{c.heroTitleRest}</span>
+        {c.heroTitle}
       </h1>
       <p class:list={["mt-5 max-w-3xl text-lg leading-relaxed sm:text-2xl", isZh ? "font-sans font-semibold" : "font-display"]} style="color: var(--muted);">
         {c.heroTheme}
