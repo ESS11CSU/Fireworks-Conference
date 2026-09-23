@@ -172,35 +172,35 @@ export const copy = {
         name: "Daniel Houser",
         photo: withBase("speakers/houser.jpg"),
         posts: [
-          { role: "", org: "George Mason University, Department of Economics" },
+          { role: "", org: "Department of Economics\nGeorge Mason University" },
         ],
       },
       {
         name: "Yongmei Liu",
         photo: withBase("speakers/liu.jpg"),
         posts: [
-          { role: "", org: "Business School, Central South University" },
+          { role: "", org: "Business School\nCentral South University" },
         ],
       },
       {
         name: "Yulei Rao",
         photo: withBase("speakers/rao.jpg"),
         posts: [
-          { role: "", org: "Business School, Central South University" },
+          { role: "", org: "Business School\nCentral South University" },
         ],
       },
       {
         name: "Zongrun Wang",
         photo: withBase("speakers/wang.jpg"),
         posts: [
-          { role: "", org: "Business School, Central South University" },
+          { role: "", org: "Business School\nCentral South University" },
         ],
       },
       {
         name: "Erte Xiao",
         photo: withBase("speakers/xiao.jpg"),
         posts: [
-          { role: "", org: "Monash University, Department of Economics" },
+          { role: "", org: "Department of Economics\nMonash University" },
         ],
       },
     ],
@@ -485,28 +485,28 @@ export const copy = {
         name: "Daniel Houser",
         photo: withBase("speakers/houser.jpg"),
         posts: [
-          { role: "", org: "乔治梅森大学经济学系" },
+          { role: "", org: "经济学系\n乔治梅森大学" },
         ],
       },
       {
         name: "刘咏梅",
         photo: withBase("speakers/liu.jpg"),
-        posts: [{ role: "", org: "中南大学商学院" }],
+        posts: [{ role: "", org: "商学院\n中南大学" }],
       },
       {
         name: "饶育蕾",
         photo: withBase("speakers/rao.jpg"),
-        posts: [{ role: "", org: "中南大学商学院" }],
+        posts: [{ role: "", org: "商学院\n中南大学" }],
       },
       {
         name: "王宗润",
         photo: withBase("speakers/wang.jpg"),
-        posts: [{ role: "", org: "中南大学商学院" }],
+        posts: [{ role: "", org: "商学院\n中南大学" }],
       },
       {
         name: "肖尔特",
         photo: withBase("speakers/xiao.jpg"),
-        posts: [{ role: "", org: "莫纳什大学经济学系" }],
+        posts: [{ role: "", org: "经济学系\n莫纳什大学" }],
       },
     ],
     committeeKicker: "委员会",
