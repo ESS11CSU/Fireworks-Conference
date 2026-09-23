@@ -29,7 +29,9 @@ const kickerClass = isZh ? "font-sans font-bold" : "font-semibold";
     <h1 class:list={["mt-4 text-5xl leading-tight text-white sm:text-6xl", titleClass]}>
       {c.splashTitle}
     </h1>
-    <p class:list={["mt-3 text-lg text-amber-200", isZh && "font-bold"]}>{c.splashSubtitle}</p>
+    {c.splashSubtitle && (
+      <p class:list={["mt-3 text-lg text-amber-200", isZh && "font-bold"]}>{c.splashSubtitle}</p>
+    )}
     <div class="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
       <button
         id="enter-meeting"
