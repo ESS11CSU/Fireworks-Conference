@@ -140,7 +140,7 @@ const kickerClass = isZh ? "font-sans font-bold" : "font-semibold";
         {
           c.chairs.map((person) => (
             <article class="card-hover rounded-3xl p-5" style="background: var(--card);">
-              <div class="speaker-photo-frame">
+              <div class="speaker-photo-frame mx-auto">
                 <img
                   src={person.photo}
                   alt={person.name}
@@ -149,7 +149,7 @@ const kickerClass = isZh ? "font-sans font-bold" : "font-semibold";
                   height="216"
                 />
               </div>
-              <h3 class:list={["mt-4 text-xl", titleClass]} style="color: var(--ink);">{person.name}</h3>
+              <h3 class:list={["mt-4 text-center text-xl", titleClass]} style="color: var(--ink);">{person.name}</h3>
               {
                 person.posts.map((post) => (
                   <div class="mt-2">
