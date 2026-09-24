@@ -73,7 +73,7 @@ const kickerClass = isZh ? "font-sans font-bold" : "font-semibold";
                 {fact.label}
               </dt>
               <dd
-                class:list={["mt-1 text-lg sm:text-xl", titleClass, "whitespace-nowrap"]}
+                class:list={["mt-1 whitespace-pre-line text-lg sm:text-xl", titleClass]}
                 style="color: var(--accent-gold);"
               >
                 {fact.value}
@@ -226,7 +226,7 @@ const kickerClass = isZh ? "font-sans font-bold" : "font-semibold";
       <h3 class:list={["mt-10 text-sm uppercase tracking-[0.2em]", kickerClass]} style="color: var(--accent-gold);">
         {c.submitPaperTitle}
       </h3>
-      <p class="mt-4 max-w-3xl" style="color: var(--muted);">{c.submitLangNote}</p>
+      {c.submitLangNote && <p class="mt-4 max-w-3xl" style="color: var(--muted);">{c.submitLangNote}</p>}
       <p class="mt-3 max-w-3xl" style="color: var(--muted);">{c.submitInvite}</p>
       <ul class="mt-4 list-disc space-y-1 pl-5" style="color: var(--ink);">
         {c.submitMaterials.map((item) => <li>{item}</li>)}
@@ -241,7 +241,7 @@ const kickerClass = isZh ? "font-sans font-bold" : "font-semibold";
         {c.submitSessionTitle}
       </h3>
       <p class="mt-4 max-w-3xl" style="color: var(--muted);">{c.submitSessionLead}</p>
-      <p class="mt-3 max-w-3xl" style="color: var(--muted);">{c.submitSessionLangNote}</p>
+      {c.submitSessionLangNote && <p class="mt-3 max-w-3xl" style="color: var(--muted);">{c.submitSessionLangNote}</p>}
       <p class="mt-3 max-w-3xl" style="color: var(--muted);">{c.submitSessionInvite}</p>
       <ul class="mt-4 list-disc space-y-1 pl-5" style="color: var(--ink);">
         {c.submitSessionMaterials.map((item) => <li>{item}</li>)}
@@ -355,7 +355,7 @@ const kickerClass = isZh ? "font-sans font-bold" : "font-semibold";
         </p>
         <h2 class:list={["mt-3 text-3xl sm:text-4xl", titleClass]} style="color: var(--ink);">{c.venueTitle}</h2>
         <p class="mt-5 max-w-2xl" style="color: var(--muted);">{c.venueBody}</p>
-        <dl class="mt-8 grid gap-6 sm:grid-cols-3">
+        <dl class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {
             c.venueFacts.map((fact) => (
               <div>
