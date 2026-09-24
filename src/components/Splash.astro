@@ -22,13 +22,13 @@ const kickerClass = isZh ? "font-zh-sans font-bold" : "font-semibold";
     class="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(255,77,141,0.18),transparent_45%),radial-gradient(circle_at_20%_20%,rgba(92,225,255,0.16),transparent_35%)]"
   >
   </div>
-  <div class="relative z-10 w-full max-w-6xl px-6 text-center">
+  <div class="relative z-10 w-full max-w-[96vw] px-3 text-center sm:px-6">
     {c.splashKicker && (
       <p class:list={["text-[11px] uppercase tracking-[0.35em] text-cyan-200", kickerClass]}>
         {c.splashKicker}
       </p>
     )}
-    <h1 class:list={["text-white", isZh ? "whitespace-nowrap text-[clamp(1.55rem,6.8vw,5rem)] leading-none" : "text-balance text-[clamp(2.25rem,5.6vw,4.75rem)] leading-[1.04]", titleClass]}>
+    <h1 class:list={["whitespace-nowrap text-white", isZh ? "text-[clamp(1.55rem,6.8vw,5rem)] leading-none" : "text-[clamp(0.75rem,3.35vw,4rem)] leading-none tracking-[-0.02em]", titleClass]}>
       {c.splashTitle}
     </h1>
     {c.splashSubtitle && (
