@@ -1,0 +1,80 @@
+name: Deploy to Aliyun
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: aliyun-production
+  cancel-in-progress: true
+
+env:
+  DEPLOY_HOST: 47.254.67.106
+  DEPLOY_PORT: "22"
+  DEPLOY_USER: deploy
+  DEPLOY_ROOT: /usr/share/nginx/essasiameeting-deploy
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: aliyun-production
+      url: https://essasiameeting.com
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+      - run: npm run build:aliyun
+
+      - name: Validate generated site
+        run: |
+          test -s dist-aliyun/index.html
+          test -s dist-aliyun/zh/index.html
+
+      - name: Configure SSH
+        env:
+          ALIYUN_SSH_KEY: ${{ secrets.ALIYUN_SSH_KEY }}
+          ALIYUN_KNOWN_HOSTS: ${{ secrets.ALIYUN_KNOWN_HOSTS }}
+        run: |
+          install -m 700 -d ~/.ssh
+          printf '%s\n' "$ALIYUN_SSH_KEY" > ~/.ssh/aliyun-deploy
+          printf '%s\n' "$ALIYUN_KNOWN_HOSTS" > ~/.ssh/known_hosts
+          chmod 600 ~/.ssh/aliyun-deploy ~/.ssh/known_hosts
+
+      - name: Upload and activate release
+        shell: bash
+        run: |
+          release="${GITHUB_SHA::12}-${GITHUB_RUN_ID}"
+          remote_release="$DEPLOY_ROOT/releases/$release"
+          ssh_args=(-i ~/.ssh/aliyun-deploy -p "$DEPLOY_PORT" -o BatchMode=yes)
+
+          ssh "${ssh_args[@]}" "$DEPLOY_USER@$DEPLOY_HOST" \
+            "umask 022 && mkdir -p '$remote_release'"
+
+          rsync -az --delete \
+            -e "ssh -i ~/.ssh/aliyun-deploy -p $DEPLOY_PORT -o BatchMode=yes" \
+            dist-aliyun/ "$DEPLOY_USER@$DEPLOY_HOST:$remote_release/"
+
+          ssh "${ssh_args[@]}" "$DEPLOY_USER@$DEPLOY_HOST" \
+            "test -s '$remote_release/index.html' && \
+             test -s '$remote_release/zh/index.html' && \
+             ln -sfn '$remote_release' '$DEPLOY_ROOT/current.next' && \
+             mv -Tf '$DEPLOY_ROOT/current.next' '$DEPLOY_ROOT/current'"
+
+      - name: Verify production site
+        run: |
+          curl --fail --silent --show-error --retry 5 --retry-delay 3 \
+            --resolve essasiameeting.com:443:$DEPLOY_HOST \
+            https://essasiameeting.com/ > /dev/null
+          curl --fail --silent --show-error --retry 5 --retry-delay 3 \
+            --resolve essasiameeting.com:443:$DEPLOY_HOST \
+            https://essasiameeting.com/zh/ > /dev/null

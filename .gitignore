@@ -1,5 +1,6 @@
 node_modules/
 dist/
+dist-aliyun/
 .astro/
 .DS_Store
 *.log
