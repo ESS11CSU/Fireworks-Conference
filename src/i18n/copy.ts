@@ -12,9 +12,9 @@ export const copy = {
       "Inaugural Asia Meeting of the Economic Science Society",
     metaDescription:
       "Inaugural Asia Meeting of the Economic Science Society. Theme: Causal Inference in the Age of AI. November 11–13, 2026, Jiangwan Building, Business School, Central South University, Changsha, Hunan Province, China.",
-    splashKicker: "Causal Inference in the Age of AI",
-    splashTitle: "Inaugural Asia Meeting",
-    splashSubtitle: "of the Economic Science Society",
+    splashKicker: "",
+    splashTitle: "Inaugural Meeting of the Economic Science Society",
+    splashSubtitle: "Causal Inference in the Age of AI",
     splashCta: "Enter the meeting",
     skipSplash: "Skip animation",
     themeToLight: "Light",
