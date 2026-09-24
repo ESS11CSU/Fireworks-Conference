@@ -362,7 +362,7 @@ export const copy = {
     facts: [
       { label: "日期", value: "2026年11月11\u201113日\n（11日报到）" },
       { label: "地点", value: "中国长沙" },
-      { label: "截稿", value: "2026年10月19日（全球时区）" },
+      { label: "截稿", value: "2026年10月19日\n（全球时区）" },
       { label: "会议语言", value: "中文分会场和英文分会场" },
     ],
     aboutImageAlt: "长沙城市地标与中南大学手绘全景图",
