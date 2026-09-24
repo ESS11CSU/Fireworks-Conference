@@ -68,7 +68,9 @@ const kickerClass = isZh ? "font-zh-sans font-bold" : "font-semibold";
       <dl
         class:list={[
           "mt-14 grid w-full grid-cols-1 gap-6 sm:gap-8",
-          isZh ? "max-w-6xl sm:grid-cols-2 lg:grid-cols-4" : "max-w-4xl sm:grid-cols-3",
+          isZh
+            ? "max-w-6xl sm:grid-cols-2 sm:gap-x-8 lg:grid-cols-4 lg:gap-x-12"
+            : "max-w-4xl sm:grid-cols-3 sm:gap-x-8",
         ]}
       >
         {
@@ -143,6 +145,9 @@ const kickerClass = isZh ? "font-zh-sans font-bold" : "font-semibold";
         <p class:list={["text-xs uppercase tracking-[0.32em]", kickerClass]} style="color: var(--accent-cyan);">
           {c.chairsLabel}
         </p>
+        <h2 class:list={["mt-3 text-3xl sm:text-4xl", titleClass]} style="color: var(--ink);">
+          {c.chairsTitle}
+        </h2>
         <p class="mt-2 text-xs" style="color: var(--faint);">{c.orderNote}</p>
       </div>
       <div class="mx-auto mt-8 grid max-w-7xl gap-4 px-5 sm:grid-cols-2 lg:grid-cols-5">

@@ -165,7 +165,8 @@ export const copy = {
         bio: "Songfa Zhong is a Professor of Business in the Department of Economics at the Hong Kong University of Science and Technology. He serves as an Associate Editor of Management Science. He is a prominent researcher in behavioral, experimental, neuro-, and genoeconomics, with research focusing on decision-making under risk and ambiguity, competitiveness, morality, and the biological foundations of economic behavior. His work has been published in journals including Econometrica, American Economic Review, Review of Economic Studies, PNAS, and Management Science.",
       },
     ],
-    chairsLabel: "Conference Co-Chairs",
+    chairsLabel: "Co-Chairs",
+    chairsTitle: "Conference Co-Chairs",
     chairs: [
       {
         name: "Daniel Houser",
@@ -202,7 +203,7 @@ export const copy = {
         photo: withBase("speakers/xiao.jpg"),
         posts: [
           { role: "Fellow", org: "Academy of the Social Sciences in Australia" },
-          { role: "Asia-Pacific Regional Vice President", org: "Economic Science Association (ESA)" },
+          { role: "Asia-Pacific Regional Vice President", org: "Economic Science Association" },
         ],
       },
     ],
@@ -484,7 +485,8 @@ export const copy = {
         bio: "钟松发，香港科技大学经济学系教授，现任《Management Science》副主编。主要从事行为经济学、实验经济学、神经经济学与基因经济学研究，研究聚焦风险与模糊条件下的决策、竞争意识、道德以及经济行为的生物学基础。成果发表于《Econometrica》《American Economic Review》《Review of Economic Studies》《PNAS》和《Management Science》等期刊。",
       },
     ],
-    chairsLabel: "会议联合主席",
+    chairsLabel: "联合主席",
+    chairsTitle: "会议联合主席",
     chairs: [
       {
         name: "Daniel Houser",
