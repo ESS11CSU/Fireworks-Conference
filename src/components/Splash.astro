@@ -22,17 +22,17 @@ const kickerClass = isZh ? "font-zh-sans font-bold" : "font-semibold";
     class="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(255,77,141,0.18),transparent_45%),radial-gradient(circle_at_20%_20%,rgba(92,225,255,0.16),transparent_35%)]"
   >
   </div>
-  <div class:list={["relative z-10 w-full px-6 text-center", isZh ? "max-w-xl" : "max-w-6xl"]}>
+  <div class="relative z-10 w-full max-w-6xl px-6 text-center">
     {c.splashKicker && (
       <p class:list={["text-[11px] uppercase tracking-[0.35em] text-cyan-200", kickerClass]}>
         {c.splashKicker}
       </p>
     )}
-    <h1 class:list={["leading-tight text-white", isZh ? "mt-4 text-5xl sm:text-6xl" : "text-balance text-[clamp(2.25rem,5.6vw,4.75rem)] leading-[1.04]", titleClass]}>
+    <h1 class:list={["text-white", isZh ? "whitespace-nowrap text-[clamp(1.55rem,6.8vw,5rem)] leading-none" : "text-balance text-[clamp(2.25rem,5.6vw,4.75rem)] leading-[1.04]", titleClass]}>
       {c.splashTitle}
     </h1>
     {c.splashSubtitle && (
-      <p class:list={["mt-5 text-amber-200", isZh ? "text-lg font-bold" : "font-display text-[clamp(1.35rem,3vw,2.25rem)] leading-tight"]}>
+      <p class:list={["mt-5 text-amber-200", isZh ? "font-zh-display text-[clamp(1.15rem,3.5vw,2.5rem)] font-bold leading-tight" : "font-display text-[clamp(1.35rem,3vw,2.25rem)] leading-tight"]}>
         {c.splashSubtitle}
       </p>
     )}

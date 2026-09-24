@@ -332,9 +332,9 @@ export const copy = {
     metaTitle: "首届经济科学社会亚洲会议",
     metaDescription:
       "首届经济科学社会亚洲会议。主题：人工智能时代的因果推断。2026年11月11–13日，中南大学商学院江湾楼，中国湖南省长沙市。",
-    splashKicker: "人工智能时代的因果推断",
+    splashKicker: "",
     splashTitle: "首届经济科学社会亚洲会议",
-    splashSubtitle: "",
+    splashSubtitle: "人工智能时代的因果推断",
     splashCta: "进入会议",
     skipSplash: "跳过动画",
     themeToLight: "亮色",
