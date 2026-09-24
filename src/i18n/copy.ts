@@ -95,8 +95,6 @@ export const copy = {
     programTitle: "Conference program",
     programDates: "November 11–13, 2026 (Registration: November 11)",
     programNote: "Coming soon",
-    programDetail:
-      "A detailed session schedule is not yet published in the Call for Papers.",
     speakersKicker: "Speakers",
     speakersTitle: "Keynote speakers",
     plenarySpeakersTitle: "Plenary speakers",
@@ -208,9 +206,9 @@ export const copy = {
         ],
       },
     ],
+    orderNote: "in alphabetical order",
     committeeKicker: "Committee",
     committeeLabel: "Organizing Committee",
-    committeeOrderNote: "Listed in alphabetical order by surname.",
     committee: [
       {
         name: "Zijun Luo",
@@ -300,7 +298,6 @@ export const copy = {
       { label: "Building", value: "Jiangwan Building" },
       { label: "Host", value: "Business School, Central South University" },
       { label: "City", value: "Changsha, Hunan Province, China" },
-      { label: "Languages", value: "Chinese-language and English-language sessions" },
     ],
     contactKicker: "Contact",
     contactTitle: "Conference contact",
@@ -365,6 +362,7 @@ export const copy = {
       { label: "日期", value: "2026年11月11\u201113日\n（11日报到）" },
       { label: "地点", value: "中国长沙" },
       { label: "截稿", value: "2026年10月19日（全球时区）" },
+      { label: "会议语言", value: "中文分会场和英文分会场" },
     ],
     aboutImageAlt: "长沙城市地标与中南大学手绘全景图",
     aboutKicker: "关于会议",
@@ -416,7 +414,6 @@ export const copy = {
     programTitle: "会议日程",
     programDates: "2026年11月11–13日",
     programNote: "待公布",
-    programDetail: "征稿启事尚未公布分会场与时段安排。",
     speakersKicker: "演讲人",
     speakersTitle: "主旨演讲嘉宾",
     plenarySpeakersTitle: "特邀报告嘉宾",
@@ -518,13 +515,13 @@ export const copy = {
         photo: withBase("speakers/xiao.jpg"),
         posts: [
           { role: "院士", org: "澳大利亚社会科学院" },
-          { role: "亚太地区副主席", org: "经济科学协会（ESA）" },
+          { role: "亚太地区副主席", org: "经济科学协会" },
         ],
       },
     ],
+    orderNote: "按姓氏字母顺序排序",
     committeeKicker: "委员会",
     committeeLabel: "组织委员会",
-    committeeOrderNote: "按姓氏字母顺序排序。",
     committee: [
       {
         name: "罗子俊",
@@ -612,7 +609,6 @@ export const copy = {
       { label: "楼宇", value: "江湾楼" },
       { label: "承办", value: "中南大学商学院" },
       { label: "城市", value: "中国湖南省长沙市" },
-      { label: "会议语言", value: "中文分会场和英文分会场" },
     ],
     contactKicker: "联系",
     contactTitle: "会议联系人",
