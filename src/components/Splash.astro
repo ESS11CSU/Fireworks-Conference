@@ -9,8 +9,8 @@ interface Props {
 const { lang } = Astro.props;
 const c = t(lang);
 const isZh = lang === "zh";
-const titleClass = isZh ? "font-sans font-bold" : "font-display";
-const kickerClass = isZh ? "font-sans font-bold" : "font-semibold";
+const titleClass = isZh ? "font-zh-display font-bold" : "font-display";
+const kickerClass = isZh ? "font-zh-sans font-bold" : "font-semibold";
 ---
 
 <div

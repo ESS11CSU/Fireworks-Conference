@@ -21,8 +21,8 @@ const accents = [
   "from-teal-300",
 ];
 const isZh = lang === "zh";
-const titleClass = isZh ? "font-sans font-bold" : "font-display";
-const kickerClass = isZh ? "font-sans font-bold" : "font-semibold";
+const titleClass = isZh ? "font-zh-display font-bold" : "font-display";
+const kickerClass = isZh ? "font-zh-sans font-bold" : "font-semibold";
 ---
 
 <div id="top" class="relative overflow-x-hidden">
@@ -98,11 +98,13 @@ const kickerClass = isZh ? "font-sans font-bold" : "font-semibold";
         </div>
         <div class="card-hover min-h-[18rem] overflow-hidden rounded-3xl lg:min-h-full">
           <img
-            src={`${import.meta.env.BASE_URL}images/about-banner.jpg`}
+            src={`${import.meta.env.BASE_URL}images/about-banner.png`}
             alt={c.aboutImageAlt}
             class="h-full w-full object-cover"
             width="1672"
             height="941"
+            loading="lazy"
+            decoding="async"
           />
         </div>
       </div>
@@ -155,7 +157,7 @@ const kickerClass = isZh ? "font-sans font-bold" : "font-semibold";
                 person.posts.map((post) => (
                   <div class="mt-2">
                     {post.role && (
-                      <p class="text-sm font-semibold leading-relaxed" style="color: var(--accent-cyan);">
+                      <p class="text-center text-sm font-semibold leading-relaxed" style="color: var(--accent-cyan);">
                         {post.role}
                       </p>
                     )}
@@ -178,41 +180,48 @@ const kickerClass = isZh ? "font-sans font-bold" : "font-semibold";
       <h2 class:list={["mt-3 text-3xl sm:text-4xl", titleClass]} style="color: var(--ink);">{c.speakersTitle}</h2>
       <div class="mt-10 flex flex-col gap-6">
         {
-          c.speakers.map((speaker) => (
-            <article class="card-hover rounded-3xl p-6 sm:p-8" style="background: var(--card);">
-              <div class="flex flex-col gap-6 sm:flex-row sm:items-start">
-                <div class="speaker-photo-frame">
-                  <img
-                    src={speaker.photo}
-                    alt={speaker.name}
-                    class="speaker-photo"
-                    width="144"
-                    height="216"
-                  />
-                </div>
-                <div class="min-w-0 flex-1">
-                  <p class:list={["text-xs uppercase tracking-[0.2em]", kickerClass]} style="color: var(--accent-fuchsia);">
-                    {speaker.badge}
-                  </p>
-                  <h3 class:list={["mt-2 text-2xl sm:text-3xl", titleClass]} style="color: var(--ink);">{speaker.name}</h3>
-                  <p class="mt-1 text-sm sm:text-base" style="color: var(--accent-cyan);">{speaker.role}</p>
-                  <a
-                    class="mt-2 inline-flex items-center gap-1 text-sm font-semibold underline-offset-4 hover:underline"
-                    href={speaker.website}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style="color: var(--accent-fuchsia);"
-                  >
-                    {c.speakerWebsiteLabel}<span aria-hidden="true">↗</span>
-                  </a>
-                  {speaker.bio.split("\n\n").map((para) => (
-                    <p class="mt-3 text-sm leading-relaxed first:mt-4 sm:text-base" style="color: var(--muted);">
-                      {para}
+          c.speakers.map((speaker, index) => (
+            <div class="contents">
+              {index === 1 && (
+                <h2 class:list={["mt-12 text-3xl sm:text-4xl", titleClass]} style="color: var(--ink);">
+                  {c.plenarySpeakersTitle}
+                </h2>
+              )}
+              <article class="card-hover rounded-3xl p-6 sm:p-8" style="background: var(--card);">
+                <div class="flex flex-col gap-6 sm:flex-row sm:items-start">
+                  <div class="speaker-photo-frame">
+                    <img
+                      src={speaker.photo}
+                      alt={speaker.name}
+                      class="speaker-photo"
+                      width="144"
+                      height="216"
+                    />
+                  </div>
+                  <div class="min-w-0 flex-1">
+                    <p class:list={["text-xs uppercase tracking-[0.2em]", kickerClass]} style="color: var(--accent-fuchsia);">
+                      {speaker.badge}
                     </p>
-                  ))}
+                    <h3 class:list={["mt-2 text-2xl sm:text-3xl", titleClass]} style="color: var(--ink);">{speaker.name}</h3>
+                    <p class="mt-1 text-sm sm:text-base" style="color: var(--accent-cyan);">{speaker.role}</p>
+                    <a
+                      class="mt-2 inline-flex items-center gap-1 text-sm font-semibold underline-offset-4 hover:underline"
+                      href={speaker.website}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style="color: var(--accent-fuchsia);"
+                    >
+                      {c.speakerWebsiteLabel}<span aria-hidden="true">↗</span>
+                    </a>
+                    {speaker.bio.split("\n\n").map((para) => (
+                      <p class="mt-3 text-sm leading-relaxed first:mt-4 sm:text-base" style="color: var(--muted);">
+                        {para}
+                      </p>
+                    ))}
+                  </div>
                 </div>
-              </div>
-            </article>
+              </article>
+            </div>
           ))
         }
       </div>
@@ -346,6 +355,7 @@ const kickerClass = isZh ? "font-sans font-bold" : "font-semibold";
           ))
         }
       </div>
+      <p class="mt-4 text-xs" style="color: var(--faint);">{c.committeeOrderNote}</p>
     </section>
 
     <section id="venue" class="mx-auto max-w-6xl px-5 py-20">

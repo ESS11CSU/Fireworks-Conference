@@ -45,7 +45,7 @@ export const copy = {
       { label: "Venue", value: "Changsha, China" },
       { label: "Deadline", value: "19 Oct 2026 AoE" },
     ],
-    aboutImageAlt: "Fireworks Conference decorative banner with fireworks and a city skyline",
+    aboutImageAlt: "Illustrated panorama of Changsha landmarks and Central South University",
     aboutKicker: "About the meeting",
     aboutTitle: "Causal Inference in the Age of AI",
     aboutBody:
@@ -98,7 +98,8 @@ export const copy = {
     programDetail:
       "A detailed session schedule is not yet published in the Call for Papers.",
     speakersKicker: "Speakers",
-    speakersTitle: "Keynote and plenary speakers",
+    speakersTitle: "Keynote speakers",
+    plenarySpeakersTitle: "Plenary speakers",
     speakerWebsiteLabel: "visit website",
     speakers: [
       {
@@ -172,40 +173,44 @@ export const copy = {
         name: "Daniel Houser",
         photo: withBase("speakers/houser.jpg"),
         posts: [
-          { role: "", org: "Department of Economics\nGeorge Mason University" },
+          { role: "Founding President", org: "Economic Science Society" },
+          { role: "Chair", org: "Department of Economics\nGeorge Mason University" },
+          { role: "Director", org: "Interdisciplinary Center for Economic Science\nGeorge Mason University" },
         ],
       },
       {
         name: "Yongmei Liu",
         photo: withBase("speakers/liu.jpg"),
         posts: [
-          { role: "", org: "Business School\nCentral South University" },
+          { role: "Party Secretary", org: "Business School\nCentral South University" },
         ],
       },
       {
         name: "Yulei Rao",
         photo: withBase("speakers/rao.jpg"),
         posts: [
-          { role: "", org: "Business School\nCentral South University" },
+          { role: "Director", org: "Financial Innovation Research Center\nCentral South University" },
         ],
       },
       {
         name: "Zongrun Wang",
         photo: withBase("speakers/wang.jpg"),
         posts: [
-          { role: "", org: "Business School\nCentral South University" },
+          { role: "Dean", org: "Business School\nCentral South University" },
         ],
       },
       {
         name: "Erte Xiao",
         photo: withBase("speakers/xiao.jpg"),
         posts: [
-          { role: "", org: "Department of Economics\nMonash University" },
+          { role: "Fellow", org: "Academy of the Social Sciences in Australia" },
+          { role: "Asia-Pacific Regional Vice President", org: "Economic Science Association (ESA)" },
         ],
       },
     ],
     committeeKicker: "Committee",
-    committeeLabel: "Organizing Committee (in alphabetical order by surname)",
+    committeeLabel: "Organizing Committee",
+    committeeOrderNote: "Listed in alphabetical order by surname.",
     committee: [
       {
         name: "Zijun Luo",
@@ -361,7 +366,7 @@ export const copy = {
       { label: "地点", value: "中国长沙" },
       { label: "截稿", value: "2026年10月19日（全球时区）" },
     ],
-    aboutImageAlt: "烟花与城市天际线装饰图",
+    aboutImageAlt: "长沙城市地标与中南大学手绘全景图",
     aboutKicker: "关于会议",
     aboutTitle: "人工智能时代的因果推断",
     aboutBody:
@@ -413,7 +418,8 @@ export const copy = {
     programNote: "待公布",
     programDetail: "征稿启事尚未公布分会场与时段安排。",
     speakersKicker: "演讲人",
-    speakersTitle: "主旨演讲与特邀报告嘉宾",
+    speakersTitle: "主旨演讲嘉宾",
+    plenarySpeakersTitle: "特邀报告嘉宾",
     speakerWebsiteLabel: "个人主页",
     speakers: [
       {
@@ -487,32 +493,38 @@ export const copy = {
         name: "Daniel Houser",
         photo: withBase("speakers/houser.jpg"),
         posts: [
-          { role: "", org: "经济系\n乔治梅森大学" },
+          { role: "创始主席", org: "经济科学社会" },
+          { role: "系主任", org: "乔治梅森大学经济系" },
+          { role: "主任", org: "乔治梅森大学跨学科经济科学中心（ICES）" },
         ],
       },
       {
         name: "刘咏梅",
         photo: withBase("speakers/liu.jpg"),
-        posts: [{ role: "", org: "商学院\n中南大学" }],
+        posts: [{ role: "党委书记", org: "中南大学商学院" }],
       },
       {
         name: "饶育蕾",
         photo: withBase("speakers/rao.jpg"),
-        posts: [{ role: "", org: "商学院\n中南大学" }],
+        posts: [{ role: "主任", org: "中南大学金融创新研究中心" }],
       },
       {
         name: "王宗润",
         photo: withBase("speakers/wang.jpg"),
-        posts: [{ role: "", org: "商学院\n中南大学" }],
+        posts: [{ role: "院长", org: "中南大学商学院" }],
       },
       {
         name: "肖尔特",
         photo: withBase("speakers/xiao.jpg"),
-        posts: [{ role: "", org: "经济系\n莫纳什大学" }],
+        posts: [
+          { role: "院士", org: "澳大利亚社会科学院" },
+          { role: "亚太地区副主席", org: "经济科学协会（ESA）" },
+        ],
       },
     ],
     committeeKicker: "委员会",
-    committeeLabel: "组织委员会（按姓氏字母顺序排序）",
+    committeeLabel: "组织委员会",
+    committeeOrderNote: "按姓氏字母顺序排序。",
     committee: [
       {
         name: "罗子俊",

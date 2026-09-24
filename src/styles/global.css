@@ -4,6 +4,10 @@
   --font-display: "Fraunces", "Songti SC", "STSong", serif;
   --font-sans: "Sora", "Noto Sans SC", "PingFang SC", "Hiragino Sans GB",
     "Microsoft YaHei", sans-serif;
+  --font-zh-sans: "Microsoft YaHei", "微软雅黑", "Noto Sans SC", "PingFang SC",
+    "Hiragino Sans GB", sans-serif;
+  --font-zh-display: "Noto Serif SC", "Source Han Serif SC", "SourceHanSerifCN-Regular",
+    "Songti SC", "STSong", serif;
   --color-night: #070414;
   --color-plum: #2a0a3d;
   --color-spark: #ff4d8d;
@@ -65,6 +69,15 @@ body {
   font-family: var(--font-sans);
   background: var(--page);
   color: var(--ink);
+}
+
+html[lang^="zh"] body,
+.font-zh-sans {
+  font-family: var(--font-zh-sans);
+}
+
+.font-zh-display {
+  font-family: var(--font-zh-display);
 }
 
 ::selection {
